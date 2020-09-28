@@ -1,0 +1,66 @@
+<!--
+ * @description: vue生命周期怎样的
+ * @author: steve.deng
+ * @Date: 2020-09-03 21:13:18
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-09-03 21:31:41
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function mergeHook(parentValue, childValue) {
+        if(childValue) {
+            if(parentValue) {
+                return parentValue.concat(childVal)
+            }
+        } else {
+            return parentValue;
+        }
+    }
+    function mergeOptions(parent, child) {
+        let opts = {};
+        // 合并钩子
+        for(let key in child) { //parent[key] undefined
+            opts[key] = mergeHook(parent[key], child[key]);
+        }
+        return opts;
+    }
+    function callHook(vm, hookname) {
+        vm.options[hookname].forEach(h => h());
+    }
+    function Vue(options) { // 合并选项
+        // 内部会将钩子函数 转换为一个数组
+        this.options = mergeOptions(this.contructor.options, options);
+        callHook(this, 'brforeCreate');
+        callHook(this, 'created');
+    }
+    // 全局组件 parent 
+    Vue.options = {}; //默认的
+    
+    Vue.mixin = function(obj) {
+        this.options = mergeOptions(this.options, obj)
+    }
+    Vue.mixin({
+        beforeCreate() {
+            console.log('before create ok1');
+        }
+    });
+    new Vue({
+        beforeCreate() {
+            console.log('before create ok2');
+        },
+        create() {
+            console.log(' create ok');
+        },
+    })
+</script>
+</html>

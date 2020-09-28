@@ -1,0 +1,76 @@
+<!--
+ * @description: vue数据响应
+ * @author: steve.deng
+ * @Date: 2020-09-03 20:35:06
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-09-03 22:51:18
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id='app'></div>
+</body>
+<script>
+    let state = {count: 0};
+    let active;
+    function definReactive(obj) {
+        for (let key in obj) {
+            let value = obj[key];
+            let dep = [];
+            Object.defineProperty(obj, key, {
+                get() {
+                    // 依赖收集
+                    if(active) {
+                        dep.push(active);
+                    }
+                    return value;
+                },
+                set(newValue) {
+                    value = newValue;
+                    // 触发更新
+                    dep.forEach(watcher => watcher());
+                }
+            })
+        }
+    }
+    definReactive(state);
+    const watcher = (fn) => {
+        active = fn;
+        fn();
+        active = null
+    }
+
+    // 订阅变化；
+    watcher(() => {
+        app.innerHTML = state.count;
+    });
+
+    watcher(() => {
+        console.log(state.count);
+    })
+
+    state.count = 2; // 触发set方法  触发-》dep.forEach(watcher => watcher());
+    // ceng'ji
+
+    function Vue() {
+        console.log(this.constructor.options);
+        console.log(this.constructor === this.__proto__.constructor);
+        console.log(this);
+    }
+    Vue.options = {
+        name: 'dzf'
+    }
+    let obj = new Vue();
+    // console.log(obj);
+    // console.log(obj.constructor);
+    // console.log(Vue.prototype === Vue);
+    // console.log(Vue.prototype);
+    // console.log(Vue.prototype.constructor.options);
+</script>
+</html>

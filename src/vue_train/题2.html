@@ -1,0 +1,40 @@
+<!--
+ * @description: vue数组更新
+ * @author: steve.deng
+ * @Date: 2020-09-03 20:35:06
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-09-03 21:01:07
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id></div>
+</body>
+<script>
+    let state = [1,2,3];
+    let active;
+    let originalArray = Array.prototype;
+    let arrayMethods = Object.create(originalArray);
+    function definReactive(obj) {
+        // 函数劫持
+        arrayMethods.push = function (...args) {
+           originalArray.push.call(this, ...args);// 原始方法
+           render(); // 更新
+        }
+        obj.__proto__ = arrayMethods; // js中原型链 改变数组的原型方法
+    }
+    definReactive(state);
+    function render() {
+        app.innerHTML = state.count;
+    }
+    render();
+    state.push(2); // 触发set方法  触发-》dep.forEach(watcher => watcher());
+    // ceng'ji
+</script>
+</html>

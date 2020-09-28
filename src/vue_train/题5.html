@@ -1,0 +1,44 @@
+<!--
+ * @description: 
+ * @author: steve.deng
+ * @Date: 2020-09-03 21:44:41
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-09-03 22:30:11
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let cbs =[];
+let pendings = false;
+function flushCallbacks() {
+    cbs.forEach(fn => fn());
+    pendings = false;
+}
+function nextTick(fn) {
+    cbs.push(fn);
+    if(!pendings) {
+        pendings = true;
+        Promise.resolve().then(flushCallbacks);
+    }
+}
+function render() {
+    console.log('渲染');
+}
+netTick(render);
+netTick(render);
+netTick(render);
+console.log('更状态');
+console.log('更状态');
+console.log('更状态');
+</script>
+</body>
+</html>

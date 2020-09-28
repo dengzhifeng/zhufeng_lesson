@@ -1,0 +1,19 @@
+{
+  "name": "zhufenglesson",
+  "version": "1.0.0",
+  "description": "记录练习项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dengzhifeng/zhufeng_lesson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dengzhifeng/zhufeng_lesson/issues"
+  },
+  "homepage": "https://github.com/dengzhifeng/zhufeng_lesson#readme"
+}

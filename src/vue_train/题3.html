@@ -1,0 +1,26 @@
+<!--
+ * @description: vue模板编译原理
+ * @author: steve.deng
+ * @Date: 2020-09-03 21:04:21
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-09-03 21:12:15
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='node_modules/vue-template-compiler/browser.js'></script>
+</head>
+<body>
+    
+</body>
+<script>
+    let { ast, render} = VureTemplateCompiler.compile(`<div>{{aaaa}}</div>`);
+    console.log(ast, render);
+
+    console.log(new Function(render));
+</script>
+</html>

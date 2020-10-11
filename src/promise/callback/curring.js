@@ -1,11 +1,10 @@
 /*
- * @description:
+ * @description: 函数柯里化 通用的柯里化函数
  * @author: steve.deng
  * @Date: 2020-09-15 22:58:55
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-09-28 20:57:42
+ * @LastEditTime: 2020-10-11 18:23:14
  */
-// 函数柯里化 通用的柯里化函数
 
 // 柯里化也是一个高阶函数
 

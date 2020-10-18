@@ -3,10 +3,14 @@
  * @author: steve.deng
  * @Date: 2020-10-11 18:22:47
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-10-11 22:25:49
+ * @LastEditTime: 2020-10-14 17:56:30
  */
 const fs = require('fs'); // node的自带模块
-
+const path = require('path');
+const resolve = (...file) => {
+    return path.resolve(__dirname, ...file);
+};
+console.log(resolve('../age.txt'));
 let eventObj = {
     arr: [], // 中介存放订阅的事件
     on(fn) {
@@ -15,18 +19,18 @@ let eventObj = {
     },
     emit() {
         // 发布
-        this.arr.forEach(fn => {
+        this.arr.forEach((fn) => {
             fn();
         });
     }
 };
 let obj = {};
-fs.readFile('age.txt', 'utf8', function(err, data) {
+fs.readFile(resolve('../age.txt'), 'utf8', function (err, data) {
     if (err) return console.log(err);
     obj.age = data;
     eventObj.emit();
 });
-fs.readFile('name.txt', 'utf8', function(err, data) {
+fs.readFile(resolve('../name.txt'), 'utf8', function (err, data) {
     obj.name = data;
     eventObj.emit();
 });

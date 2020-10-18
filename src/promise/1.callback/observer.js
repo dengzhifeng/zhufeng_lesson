@@ -3,9 +3,9 @@
  * @author: steve.deng
  * @Date: 2020-10-11 22:51:55
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-10-11 23:13:16
+ * @LastEditTime: 2020-10-14 18:05:07
  */
-// 将所有的观察者都放到被观察者中 (基于发布订阅的)
+// 将所有的观察者都放到被观察者中 (基于发布订阅的)  里面内部有关联的
 // 被观察者
 class Subject {
     constructor(name) {
@@ -18,10 +18,12 @@ class Subject {
         this.Observers.push(o);
     }
     setState(newState) {
-        this.state = newState;
-        this.Observers.forEach(o => {
-            o.update(this);
-        });
+        if (this.state !== newState) {
+            this.state = newState;
+            this.Observers.forEach((o) => {
+                o.update(this);
+            });
+        }
     }
 }
 
@@ -42,4 +44,3 @@ let o2 = new Observer('妈妈');
 baby.attach(o1);
 baby.attach(o2);
 baby.setState('有人打我');
-baby.setState('有人打他');

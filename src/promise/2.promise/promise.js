@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-10-14 18:12:38
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-10-18 23:33:25
+ * @LastEditTime: 2020-10-19 13:15:47
  */
 const STATUS = {
     PENDING: 'PENDING',
@@ -28,7 +28,7 @@ function resolvePromise(x, promise2, resolve, reject) {
     // 看x是普通值还是promise 如果是promise 要采用他的状态
     if ((typeof x === 'object' && x !== null) || typeof x === 'function') {
         // x可以是一个对象或者函数
-        let called;
+        let called; // 标志位 防止resolve reject同时进行
         try {
             let then = x.then;
             // 看这个对象是否有then方法
@@ -45,15 +45,15 @@ function resolvePromise(x, promise2, resolve, reject) {
                 // 复用32行就好了 防止有报错可能性 14行介绍了
                 then.call(
                     x,
-                    function(y) {
+                    function (y) {
                         // 调用返回的promise 用他的结果 作为下一次then的结果。
                         if (called) return;
                         called = true;
-                        // y就是成功的值 999
-                        // 递归解析成功后的值 直到他是一个promise为止
+                        // y就是成功的值 999  或者y是一个promise 要用递归思路
+                        // 递归解析成功后的值 直到他是一个普通值为止
                         resolvePromise(y, promise2, resolve, reject);
                     },
-                    r => {
+                    (r) => {
                         if (called) return;
                         called = true;
                         reject(r);
@@ -82,19 +82,23 @@ class Promise {
         this.onResolvedCallbacks = [];
         // 存放失败回调
         this.onRejectedCallbacks = [];
-        const resolve = val => {
+        const resolve = (val) => {
+            // 是promise 就继续递归执行
+            if (val instanceof Promise) {
+                return val.then(resolve, reject);
+            }
             if (this.status == STATUS.PENDING) {
                 this.status = STATUS.FUFILLED;
                 this.value = val;
                 // resolve时就调用列表 （发布执行）
-                this.onResolvedCallbacks.forEach(fn => fn());
+                this.onResolvedCallbacks.forEach((fn) => fn());
             }
         };
-        const reject = reason => {
+        const reject = (reason) => {
             if (this.status == STATUS.PENDING) {
                 this.status = STATUS.REJECTED;
                 this.reason = reason;
-                this.onRejectedCallbacks.forEach(fn => fn());
+                this.onRejectedCallbacks.forEach((fn) => fn());
             }
         };
         try {
@@ -104,6 +108,15 @@ class Promise {
         }
     }
     then(onFulfilled, onRejected) {
+        // 没传onFulfilled 就设置默认函数 就可以默认拿到then里面的data了
+        onFulfilled =
+            typeof onFulfilled === 'function' ? onFulfilled : (data) => data;
+        onRejected =
+            typeof onRejected === 'function'
+                ? onRejected
+                : (err) => {
+                      throw err;
+                  };
         let promise2 = new Promise((resolve, reject) => {
             // 同步处理
             if (this.status === STATUS.FUFILLED) {
@@ -156,6 +169,32 @@ class Promise {
         });
         return promise2;
     }
+    catch(err) {
+        // 默认直走失败 没有成功 then的简单写法  err是函数
+        return this.then(null, err);
+    }
+    static resolve(val) {
+        return new Promise((resolve, reject) => {
+            resolve(val);
+        });
+    }
+    static reject(reason) {
+        return new Promise((resolve, reject) => {
+            reject(reason);
+        });
+    }
 }
 
+// 测试时会调用这个方法
+Promise.defer = Promise.deferred = function () {
+    let dfd = {};
+    dfd.promise = new Promise((resolve, reject) => {
+        dfd.resolve = resolve;
+        dfd.reject = reject;
+    });
+    return dfd;
+};
+
+// 安装测试工具包
+// npm install promises-aplus-tests -g
 module.exports = Promise;

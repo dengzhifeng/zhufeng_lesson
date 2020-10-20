@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-10-19 14:27:38
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-10-19 18:26:31
+ * @LastEditTime: 2020-10-20 14:50:08
  */
 const resolvePath = require('../utils');
 const { reject } = require('./promise');
@@ -38,27 +38,67 @@ Promise.all = function (promises) {
     });
 };
 // Promise.all方法返回一个promise
-Promise.all([1, getName, getAge, 2]).then((data) => {
-    console.log(data);
-});
+// Promise.all([1, getName, getAge, 2]).then((data) => {
+//     console.log(data);
+// });
 
 // Promise.prototype.finally 最终的 不是try catch finally
+Promise.prototype.finally = function (callback) {
+    return this.then(
+        (data) => {
+            console.log('then data', data);
+            // 让函数执行内部会调用方法 如果方法是promise需求等待她完成
+            return Promise.resolve(callback()).then((res) => {
+                return data;
+            });
+        },
+        (err) => {
+            // reject
+            return Promise.resolve(callback()).then(() => {
+                throw err;
+            });
+        }
+    );
+};
 
-Promise.resolve(123)
+Promise.reject(123)
     .finally((data) => {
-        // 不觉得成功还是失败
+        // 不管成功还是失败 都执行
         // 这里传入的函数 无论如何都会执行
-        console.log('finally', data);
+        console.log('finally', data); //undefined
         // finally可以返回一个promise
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                reject('ok');
-            }, 1000);
+                reject('ok'); // resolve会跑下面的成功, 但是用123的值 reject会跑到下面的err 用ok
+            }, 2000);
         });
     })
     .then(
         (data) => {
-            console.log('suc:', data);
+            console.log('suc:', data); // 123
+            return 2;
+        },
+        (err) => {
+            console.log('err:', err);
+        }
+    );
+
+Promise.reject(123)
+    .finally((data) => {
+        // 不管成功还是失败 都执行
+        // 这里传入的函数 无论如何都会执行
+        console.log('finally', data); //undefined
+        // finally可以返回一个promise
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('ok'); // resolve会跑下面的成功, 但是用123的值 reject会跑到下面的err 用ok
+            }, 2000);
+        });
+    })
+    .then(
+        (data) => {
+            console.log('suc:', data); // 123
+            return 2;
         },
         (err) => {
             console.log('err:', err);

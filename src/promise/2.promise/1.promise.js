@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-10-14 18:10:35
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-10-19 14:27:34
+ * @LastEditTime: 2020-10-26 15:00:21
  */
 // 解决
 // 异步开发问题(Promise.all)
@@ -16,7 +16,7 @@ const fs = require('fs');
 let p = new Promise((resolve, reject) => {
     setTimeout(() => {
         // reject('失败了');
-        // resolve('成功了');
+        resolve('成功了');
     }, 1000);
     // throw new Error('错误了');
 });
@@ -31,7 +31,7 @@ p.then(
     }
 );
 
-// promise练市调用
+// promise链式调用
 // 1. 如果then方法中 返回不是一个promise,
 // 会将这个值传递给外层下次then的成功结果
 // 2. 如果执行then方法中的方法出错了 抛出异常 走到下一个then的失败中

@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-09-15 22:58:55
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-10-11 18:23:14
+ * @LastEditTime: 2020-10-27 11:18:59
  */
 
 // 柯里化也是一个高阶函数
@@ -25,12 +25,12 @@ function isType(str, type) {
 // 优化后 第二版
 // 让方法更具体一些 isNumber isString 不用写类型了 直接按类型函数调用
 function isType2(type) {
-    return function(value) {
+    return function (value) {
         return Object.prototype.toString.call(value) === `[object ${type}]`;
     };
 }
 let utils = {};
-['String', 'Number', 'Boolean', 'Object'].forEach(method => {
+['String', 'Number', 'Boolean', 'Object'].forEach((method) => {
     utils[`is` + method] = isType2(method);
 });
 
@@ -45,7 +45,7 @@ function sum(a, b, c, d, e) {
 // arr就是我们要收集每次调用时传入的参数
 const curring = (fn, arr = []) => {
     let len = fn.length; // 函数的长度就是sum函数参数个数
-    return function(...args) {
+    return function (...args) {
         let newArgs = [...arr, ...args];
         if (newArgs.length == len) {
             return fn(...newArgs);
@@ -57,7 +57,7 @@ const curring = (fn, arr = []) => {
 let newSum = curring(sum);
 // 柯理化函数 每次入参都是一个参数
 let a = newSum(1)(2)(3)(4)(5);
-console.log(a);
+console.log(a); // 15
 // 偏函数
 let b = newSum(1, 2)(3)(5, 4);
-console.log(b);
+console.log(b); // 15

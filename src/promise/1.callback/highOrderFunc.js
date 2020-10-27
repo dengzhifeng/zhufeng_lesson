@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-09-06 13:46:38
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-10-14 17:58:49
+ * @LastEditTime: 2020-10-27 10:59:12
  */
 // 高阶函数 2个特点满足一个就是高阶函数
 // 1）我们给一个函数传入一个函数
@@ -22,8 +22,6 @@ Function.prototype.before = function (beforeFn) {
     /// (...args) 剩余运算符 把参数转为数组args
     return (...args) => {
         // 不能是普通函数 this会指向调用者环境 箭头函数中没有this 没有arguments 没有prototype  这些属性都会向上查找
-        console.log(args);
-        console.log(...args);
         beforeFn();
         // ...解构运算符 把数组解构为一个个参数
         this(...args); // 指向core()

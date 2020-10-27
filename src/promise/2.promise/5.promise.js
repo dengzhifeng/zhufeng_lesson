@@ -3,13 +3,10 @@
  * @author: steve.deng
  * @Date: 2020-10-19 14:27:38
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-10-20 14:50:08
+ * @LastEditTime: 2020-10-26 16:56:46
  */
 const resolvePath = require('../utils');
 const { reject } = require('./promise');
-let fs = require('fs').promises;
-let getName = fs.readFile(resolvePath('./name.txt'), 'utf8');
-let getAge = fs.readFile(resolvePath('./age.txt'), 'utf8');
 
 function isPromise(val) {
     return typeof val.then == 'function';
@@ -37,10 +34,15 @@ Promise.all = function (promises) {
         }
     });
 };
+
+let fs = require('fs').promises;
+let getName = fs.readFile(resolvePath('./name.txt'), 'utf8');
+let getAge = fs.readFile(resolvePath('./age.txt'), 'utf8');
+
 // Promise.all方法返回一个promise
-// Promise.all([1, getName, getAge, 2]).then((data) => {
-//     console.log(data);
-// });
+Promise.all([1, getName, getAge, 2]).then((data) => {
+    console.log(data);
+});
 
 // Promise.prototype.finally 最终的 不是try catch finally
 Promise.prototype.finally = function (callback) {
@@ -69,7 +71,7 @@ Promise.reject(123)
         // finally可以返回一个promise
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                reject('ok'); // resolve会跑下面的成功, 但是用123的值 reject会跑到下面的err 用ok
+                resolve('ok'); // Promise.reject(123) resolve会跑下面的失败, 但是用123的值 reject会跑到下面的err 用ok
             }, 2000);
         });
     })

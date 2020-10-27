@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-10-14 18:12:38
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-10-19 13:15:47
+ * @LastEditTime: 2020-10-26 16:48:31
  */
 const STATUS = {
     PENDING: 'PENDING',
@@ -173,6 +173,23 @@ class Promise {
         // 默认直走失败 没有成功 then的简单写法  err是函数
         return this.then(null, err);
     }
+    finally(callback) {
+        return this.then(
+            (data) => {
+                console.log('then data', data);
+                // 让函数执行内部会调用方法 如果方法是promise需求等待她完成
+                return Promise.resolve(callback()).then((res) => {
+                    return data;
+                });
+            },
+            (err) => {
+                // reject
+                return Promise.resolve(callback()).then(() => {
+                    throw err;
+                });
+            }
+        );
+    }
     static resolve(val) {
         return new Promise((resolve, reject) => {
             resolve(val);
@@ -183,17 +200,52 @@ class Promise {
             reject(reason);
         });
     }
+    static defer() {
+        let dfd = {};
+        dfd.promise = new Promise((resolve, reject) => {
+            dfd.resolve = resolve;
+            dfd.reject = reject;
+        });
+        return dfd;
+    }
+    static all(promises) {
+        function isPromise(val) {
+            return typeof val.then == 'function';
+        }
+
+        return new Promise((resolve, reject) => {
+            let result = [];
+            let times = 0;
+            function processData(index, val) {
+                result[index] = val;
+                // 每次加1做处理次数  等于传入的promises数组长度时 就完成了 resolve就行了
+                if (++times === promises.length) {
+                    resolve(result);
+                }
+            }
+            for (let i = 0; i < promises.length; i++) {
+                let p = promises[i];
+                if (isPromise(p)) {
+                    p.then((data) => {
+                        processData(i, data); // 普通值
+                    }, reject); // reject处理后 返回的promise就可以catch了
+                } else {
+                    processData(i, p); // 普通值
+                }
+            }
+        });
+    }
 }
 
 // 测试时会调用这个方法
-Promise.defer = Promise.deferred = function () {
-    let dfd = {};
-    dfd.promise = new Promise((resolve, reject) => {
-        dfd.resolve = resolve;
-        dfd.reject = reject;
-    });
-    return dfd;
-};
+// Promise.defer = Promise.deferred = function () {
+//     let dfd = {};
+//     dfd.promise = new Promise((resolve, reject) => {
+//         dfd.resolve = resolve;
+//         dfd.reject = reject;
+//     });
+//     return dfd;
+// };
 
 // 安装测试工具包
 // npm install promises-aplus-tests -g

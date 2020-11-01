@@ -16,5 +16,8 @@
     "bugs": {
         "url": "https://github.com/dengzhifeng/zhufeng_lesson/issues"
     },
-    "homepage": "https://github.com/dengzhifeng/zhufeng_lesson#readme"
+    "homepage": "https://github.com/dengzhifeng/zhufeng_lesson#readme",
+    "devDependencies": {
+        "co": "^4.6.0"
+    }
 }

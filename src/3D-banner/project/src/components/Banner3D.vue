@@ -66,7 +66,9 @@ export default {
             });
         } // 长度9
 
-        /* 2.处理每一项的样式 */ const computed = (initial, source) => {
+        /* 2.处理每一项的样式 */
+
+        const computed = (initial, source) => {
             // 确保五项索引是合法的
             let len = source.length;
             initial = initial < 0 ? 0 : initial >= len ? len - 1 : initial;
@@ -80,7 +82,7 @@ export default {
             temp4 >= len ? (temp4 = temp4 - len) : null;
             temp5 >= len ? (temp5 = temp5 - len) : null;
             // [0,1,2,3,4,5,6,7,8]
-            // -2  -1 [] 9 10
+            // -2  -1 [1-8] 9 10
             // 计算每一项的样式
             return source.map((item, index) => {
                 let transform = `translate(-50%,-50%) scale(0.55)`,

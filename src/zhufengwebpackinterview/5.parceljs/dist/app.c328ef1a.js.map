@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["sum","a","b","console","log"],"mappings":"AACA,IAAIA,GAAG,GAAG,SAANA,GAAM,CAACC,CAAD,EAAGC,CAAH;AAAA,SAAOD,CAAC,GAACC,CAAT;AAAA,CAAV;;AACAC,OAAO,CAACC,GAAR,CAAYJ,GAAZ","file":"app.c328ef1a.js","sourceRoot":"..\\src","sourcesContent":["\r\nlet sum = (a,b)=>a+b;\r\nconsole.log(sum);"]}

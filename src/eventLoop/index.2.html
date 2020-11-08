@@ -1,0 +1,46 @@
+<!--
+ * @description: 
+ * @author: steve.deng
+ * @Date: 2020-11-08 17:02:26
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-11-08 20:28:52
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            console.log(1);
+            async function async() {
+                console.log(2); // 立即执行
+                await console.log(3); // Promise.resolve(console.log(3)).then(console.log(4))  Promise.resolve(2)
+                console.log(4); // 等于一个then方法
+            }
+            setTimeout(() => {
+                console.log(5);
+            }, 0);
+            const promise = new Promise((resolve, reject) => {
+                console.log(6); // 立即执行 同步
+                resolve(7);
+            });
+            promise.then(res => {
+                console.log(res);
+            });
+            async(); // 同步
+            console.log(8);
+            // 1
+            // 6
+            // 2
+            // 3
+            // 8
+            // 7
+            // 4
+            // 5
+        </script>
+    </body>
+</html>

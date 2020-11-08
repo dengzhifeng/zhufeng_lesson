@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-10-14 18:10:35
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-01 18:21:25
+ * @LastEditTime: 2020-11-08 21:47:09
  */
 
 const resolvePath = require('../utils');
@@ -57,3 +57,23 @@ async function readAll() {
 readAll().then(data => {
     console.log(data);
 });
+
+let c = function() {
+    console.log(111);
+};
+async function a() {
+    // console.log(111);
+    return Promise.resolve(console.log(111));
+    // return new Promise((resolve, reject) => {
+    //     resolve(c());
+    // });
+}
+async function testAsync() {
+    // setTimeout(() => {
+    //     console.log('2');
+    // }, 0);
+    // let b = await console.log('1');
+    let b = await a();
+    console.log(b);
+}
+testAsync();

@@ -1,0 +1,62 @@
+<!--
+ * @description: 
+ * @author: steve.deng
+ * @Date: 2020-11-08 17:02:26
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-11-08 18:07:04
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button id="button">点我啊</button>
+        <script>
+            button.addEventListener('click', () => {
+                console.log('listener1');
+                Promise.resolve().then(() => {
+                    console.log('micro task');
+                });
+            });
+            button.addEventListener('click', () => {
+                console.log('listener2');
+                Promise.resolve().then(() => {
+                    console.log('micro task2');
+                });
+            });
+
+            // listener1
+            // micro task
+            // listener2
+            // micro task2
+
+            // 如果立即执行
+            button.click(); // 相当于click1() click2()立即执行 先执行同步任务 再执行微任务
+            // listener1
+            // listener2
+            // micro task
+            // micro task2
+        </script>
+        <script>
+            // script是一个宏任务 执行完 再渲染ui 所以只有yellow
+            //1 3 2 4 先yellow 后green
+            document.body.style.background = 'red';
+            console.log(1);
+            setTimeout(() => {
+                // 定时器也是宏任务
+                console.log(4);
+                document.body.style.background = 'green';
+            }, 0);
+            // document.body.style.background = 'yellow';
+            Promise.resolve().then(() => {
+                console.log(2);
+                document.body.style.background = 'yellow';
+            });
+            console.log(3);
+        </script>
+    </body>
+</html>

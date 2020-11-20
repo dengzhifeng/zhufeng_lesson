@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "push": "npx hf-cli push -p true"
+        "push111": "npx hf-cli push -p true",
+        "push": "git add . && git commit -m 'save' && git push"
     },
     "repository": {
         "type": "git",
@@ -19,5 +20,8 @@
     "homepage": "https://github.com/dengzhifeng/zhufeng_lesson#readme",
     "devDependencies": {
         "co": "^4.6.0"
+    },
+    "dependencies": {
+        "vant": "^3.0.0-beta.8"
     }
 }

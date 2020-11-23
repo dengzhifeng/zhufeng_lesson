@@ -3,14 +3,13 @@
  * @author: steve.deng
  * @Date: 2020-11-22 12:02:07
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-23 17:49:02
+ * @LastEditTime: 2020-11-23 18:02:13
  */
 import { Module } from 'vuex';
 import { CATEGORY_TYPES, IHomeState, ISlider } from '../../typings/home';
 import { IGlobalState } from '..';
 import * as types from '../action-types';
 import { getSliders } from '@/api/home';
-import { Slider } from 'vant';
 // 首页数据
 const state: IHomeState = {
     currentCategory: CATEGORY_TYPES.ALL,

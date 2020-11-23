@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-22 11:35:06
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-22 22:49:24
+ * @LastEditTime: 2020-11-23 11:16:42
  */
 import { createStore } from 'vuex';
 import { IHomeState } from '@/typings/home';

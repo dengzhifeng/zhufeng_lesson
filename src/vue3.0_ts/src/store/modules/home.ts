@@ -3,14 +3,15 @@
  * @author: steve.deng
  * @Date: 2020-11-22 12:02:07
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-22 22:53:27
+ * @LastEditTime: 2020-11-23 15:14:08
  */
 import { Module } from 'vuex';
 import { CATEGORY_TYPES, IHomeState } from '../../typings/home';
 import { IGlobalState } from '..';
+import * as types from '../action-types';
 // 首页数据
 const state: IHomeState = {
-    currentCategory: CATEGORY_TYPES.NODE,
+    currentCategory: CATEGORY_TYPES.ALL,
     sliders: [],
     lessons: {
         hasMore: true, // 有没有更多数据
@@ -25,7 +26,12 @@ const state: IHomeState = {
 const home: Module<IHomeState, IGlobalState> = {
     state,
     namespaced: true,
-    mutations: {}
+    mutations: {
+        // 修改目录状态
+        [types.SET_CATEGORY](state, payload: CATEGORY_TYPES) {
+            state.currentCategory = payload;
+        }
+    }
 };
 
 export default home;

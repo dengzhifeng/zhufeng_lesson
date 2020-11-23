@@ -3,12 +3,14 @@
  * @author: steve.deng
  * @Date: 2020-11-22 12:02:07
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-23 15:14:08
+ * @LastEditTime: 2020-11-23 17:49:02
  */
 import { Module } from 'vuex';
-import { CATEGORY_TYPES, IHomeState } from '../../typings/home';
+import { CATEGORY_TYPES, IHomeState, ISlider } from '../../typings/home';
 import { IGlobalState } from '..';
 import * as types from '../action-types';
+import { getSliders } from '@/api/home';
+import { Slider } from 'vant';
 // 首页数据
 const state: IHomeState = {
     currentCategory: CATEGORY_TYPES.ALL,
@@ -30,6 +32,15 @@ const home: Module<IHomeState, IGlobalState> = {
         // 修改目录状态
         [types.SET_CATEGORY](state, payload: CATEGORY_TYPES) {
             state.currentCategory = payload;
+        },
+        [types.SET_SLIDER_LIST](state, payload: ISlider[]) {
+            state.sliders = payload;
+        }
+    },
+    actions: {
+        async [types.SET_SLIDER_LIST]({ commit }) {
+            let sliders = await getSliders<ISlider>();
+            commit(types.SET_SLIDER_LIST, sliders);
         }
     }
 };

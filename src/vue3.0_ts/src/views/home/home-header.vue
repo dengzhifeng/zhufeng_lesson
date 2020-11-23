@@ -3,12 +3,11 @@
  * @author: steve.deng
  * @Date: 2020-11-22 11:54:18
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-23 15:15:56
+ * @LastEditTime: 2020-11-23 17:18:22
 -->
 <template>
     <div class="home-header">
         <img src="@/assets/logo.png" />
-        {{ category }}
         <van-dropdown-menu>
             <van-dropdown-item
                 :modelValue="category"

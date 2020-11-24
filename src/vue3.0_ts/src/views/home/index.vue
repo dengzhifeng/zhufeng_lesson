@@ -3,18 +3,25 @@
  * @author: steve.deng
  * @Date: 2020-11-20 17:43:05
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-23 15:12:44
+ * @LastEditTime: 2020-11-24 18:07:18
 -->
 <template>
     <div class="home">
-        {{ category }}
         <!-- 首页头部 -->
         <HomeHeader
             :category="category"
             @setCurrentCategory="setCurrentCategory"
         />
         <!-- 轮播图 -->
-        <HomeSwiper />
+        <Suspense>
+            <template #default>
+                <HomeSwiper></HomeSwiper>
+            </template>
+            <template #fallback>
+                <div>loading...</div>
+            </template>
+        </Suspense>
+
         <!-- 课程列表 -->
         <HomeList />
     </div>
@@ -42,6 +49,11 @@ function useCategoty(store: Store<IGlobalState>) {
     };
 }
 
+function useLessonList(store: Store<IGlobalState>) {
+    const lessonList = computed(() => {
+        return store.state.home.lessons.list;
+    });
+}
 export default defineComponent({
     components: {
         HomeHeader,
@@ -58,3 +70,8 @@ export default defineComponent({
     }
 });
 </script>
+<style lang="scss">
+.home {
+    padding-top: 65px;
+}
+</style>

@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-22 12:08:22
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-22 14:31:36
+ * @LastEditTime: 2020-11-25 17:44:29
  */
 
 // 轮播图对象接口
@@ -17,7 +17,7 @@ export interface ILesson {
     video: string;
     poster: string;
     price: number;
-    category?: string;
+    category?: number;
 }
 
 // 课程信息接口

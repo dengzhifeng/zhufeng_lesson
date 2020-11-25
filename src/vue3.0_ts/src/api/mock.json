@@ -1,0 +1,45 @@
+{
+    "data": {
+        "hasMore": true,
+        "loading": true,
+        "offset": 0,
+        "limit": 5,
+        "list": [
+            {
+                "title": "react冲刺班",
+                "video": "xxx",
+                "poster": "xxxxxxx",
+                "price": 111,
+                "category": "1"
+            },
+            {
+                "title": "react冲刺班",
+                "video": "xxx",
+                "poster": "xxxxxxx",
+                "price": 111,
+                "category": "1"
+            },
+            {
+                "title": "react冲刺班",
+                "video": "xxx",
+                "poster": "xxxxxxx",
+                "price": 111,
+                "category": "1"
+            },
+            {
+                "title": "react冲刺班",
+                "video": "xxx",
+                "poster": "xxxxxxx",
+                "price": 111,
+                "category": "1"
+            },
+            {
+                "title": "react冲刺班",
+                "video": "xxx",
+                "poster": "xxxxxxx",
+                "price": 111,
+                "category": "1"
+            }
+        ]
+    }
+}

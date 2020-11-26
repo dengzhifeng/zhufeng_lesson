@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-20 17:43:05
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-25 18:06:48
+ * @LastEditTime: 2020-11-26 09:55:23
 -->
 <template>
     <div class="home">
@@ -80,11 +80,11 @@ export default defineComponent({
         // DOM节点
         const refreshElm = ref<null | HTMLElement>(null);
 
-        const { isLoading, haseMore } = useLoadMore(
-            refreshElm,
-            store,
-            `home/${Types.SET_LESSON_LIST}`
-        );
+        // const { isLoading, haseMore } = useLoadMore(
+        //     refreshElm,
+        //     store,
+        //     `home/${Types.SET_LESSON_LIST}`
+        // );
         return {
             category,
             setCurrentCategory,

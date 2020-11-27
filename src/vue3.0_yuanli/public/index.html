@@ -1,0 +1,39 @@
+<!--
+ * @description: 
+ * @author: steve.deng
+ * @Date: 2020-11-26 17:59:00
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-11-27 17:57:49
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+    <!-- <script src="/node_modules/@vue/reactivity/dist/reactivity.global.js"></script> -->
+    <script src="/dist/vue.js"></script>
+    <script>
+        const { reactive, effect, ref, compted, toRefs } = VueReactivity;
+        const state = reactive({
+            name: 'zf',
+            age: 11,
+            address: '广州',
+            a: { a: 1 }
+        });
+        console.log(state.a);
+        // state.address = '深圳';
+        effect(() => {
+            app.innerHTML = state.name + '今年' + state.age + '岁了';
+        });
+
+        // 当effect函数中的数据发生变化，  effect会重新执行
+        setTimeout(() => {
+            state.bb = 'dzf2222';
+        }, 1000);
+    </script>
+</html>

@@ -30,7 +30,7 @@ function createGetter() {
 
         // 依赖收集
         console.log('此时数据做了获取的操作');
-
+        track(target, key);
         // 如果取得值是对象 也要代理    取值才代理 懒递归
         if (isObject(res)) {
             return reactive(res);

@@ -1,9 +1,9 @@
 <!--
- * @description: 
+ * @description: 渲染原理
  * @author: steve.deng
  * @Date: 2020-11-26 17:59:00
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-30 11:37:30
+ * @LastEditTime: 2020-11-30 12:00:21
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,28 +16,26 @@
         <div id="app"></div>
     </body>
     <!-- <script src="/node_modules/@vue/reactivity/dist/reactivity.global.js"></script> -->
+    <!-- <script src="/node_modules/vue/dist/vue.global.js"></script> -->
     <script src="/dist/vue.js"></script>
     <script>
-        const { reactive, effect, ref, compted, toRefs } = VueReactivity;
-        // const state = reactive({
-        //     name: 'zf',
-        //     age: 11,
-        //     address: '广州',
-        //     a: { a: 1 }
-        // });
-        const state = reactive([1, 2, 3]);
-        console.log(state.a);
-        // state.address = '深圳';
-        effect(() => {
-            console.log('ok');
-            // app.innerHTML = state.name + '今年' + state.age + '岁了';
-            app.innerHTML = state;
-        });
-
-        // 当effect函数中的数据发生变化，  effect会重新执行
-        setTimeout(() => {
-            // state.name = 'dzf2222';
-            state[10] = 1;
-        }, 1000);
+        let { createApp, reactive, h } = Vue;
+        let App = {
+            setup() {
+                let state = reactive({ name: 'zf', age: 11 }); // 原理 proxy
+                // render函数
+                return () => {
+                    // react => createElement();
+                    return h(
+                        'div',
+                        { style: { color: 'red' } },
+                        state.name + ':' + state.age
+                    );
+                };
+            }
+        };
+        // 组件是怎样渲染 初始化的流程
+        // vue3 runtime-dom针对浏览器平台   runtime-code核心
+        createApp(App).mount('#app');
     </script>
 </html>

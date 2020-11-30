@@ -14,7 +14,7 @@ import path from 'path';
 export default {
     input: 'src/index.ts',
     output: {
-        name: 'Vue', // 打包出来的包名字 window会有这个变量
+        name: 'VueReactivity', // 打包出来的包名字 window会有这个变量
         format: 'umd', // 格式
         file: path.resolve('dist/vue.js'), // 输出路径
         sourcemap: true // 生成映射文件

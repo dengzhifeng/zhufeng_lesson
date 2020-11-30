@@ -3,9 +3,10 @@
  * @author: steve.deng
  * @Date: 2020-11-27 16:33:28
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-27 17:52:03
+ * @LastEditTime: 2020-11-30 11:38:05
  */
 
+import { track, trigger } from './effect';
 import {
     hasChanged,
     hasOwn,
@@ -29,7 +30,7 @@ function createGetter() {
         }
 
         // 依赖收集
-        console.log('此时数据做了获取的操作');
+        console.log('此时数据做了获取的操作', target, key);
         track(target, key);
         // 如果取得值是对象 也要代理    取值才代理 懒递归
         if (isObject(res)) {
@@ -57,9 +58,11 @@ function createSetter() {
         // Reflect设置不成功会返回false  会有返回值
         const result = Reflect.set(target, key, value, receiver);
         if (!hadKey) {
+            trigger(target, 'add', key, value);
             console.log('新增属性');
             // 值变化才算
         } else if (hasChanged(value, oldValue)) {
+            trigger(target, 'set', key, value, oldValue);
             console.log('修改属性');
         }
 

@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-30 16:19:39
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-30 17:22:22
+ * @LastEditTime: 2020-12-01 16:14:56
  */
 
 import { createRenderer } from '../runtime-core/index';
@@ -22,6 +22,7 @@ export function createApp(rootComponent) {
     const { mount } = app;
     // 重写了mount
     app.mount = function (container) {
+        container = document.querySelector(container);
         // 1.挂载时需要将容器清空 再进行挂载
         container.innerHTML = '';
         mount(container);

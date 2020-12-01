@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-27 16:27:33
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-27 17:45:07
+ * @LastEditTime: 2020-12-01 18:03:35
  */
 export const isObject = (val) => {
     return typeof val == 'object' && val !== null;
@@ -23,6 +23,8 @@ export const hasOwn = (target, key) => hasOwnPrototype.call(target, key);
 
 export const hasChanged = (value, oldValue) => value !== oldValue;
 
-let b = [1, 3, 4, 5];
+export * from './shapeFlages';
 
-console.log(hasOwn(b, '1'));
+export const isString = (value) => typeof value === 'string';
+
+export const isFunction = (value) => typeof value == 'function';

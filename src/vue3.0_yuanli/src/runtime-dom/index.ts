@@ -3,14 +3,14 @@
  * @author: steve.deng
  * @Date: 2020-11-30 16:19:39
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-01 16:14:56
+ * @LastEditTime: 2020-12-02 11:22:36
  */
 
 import { createRenderer } from '../runtime-core/index';
 import { nodeOps } from './nodeOps';
 import { patchProp } from './patchProp';
 
-const renderOptions = { ...patchProp, ...nodeOps }; // dom操作方法
+const renderOptions = { patchProp, ...nodeOps }; // dom操作方法
 // 创建渲染器
 function ensureRenderer() {
     return createRenderer(renderOptions);

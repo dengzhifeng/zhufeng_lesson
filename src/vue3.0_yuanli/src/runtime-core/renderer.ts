@@ -8,7 +8,7 @@ import { createComponentInstance, setupComponent } from './component';
  * @author: steve.deng
  * @Date: 2020-11-30 16:32:43
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-02 11:19:56
+ * @LastEditTime: 2020-12-02 11:27:04
  */
 export function createRenderer(options) {
     // options是平台传过来的dom方法， 不同平台实现不同操作逻辑 如小程序 浏览器等
@@ -20,6 +20,7 @@ function baseCreateRenderer(options) {
         // 我需要将虚拟节点 变成真实节点 挂载到容器上
         patch(null, vnode, container);
     };
+    debugger;
     const {
         createElement: hostCreateElement,
         patchProp: hostPatchProp,
@@ -72,6 +73,9 @@ function baseCreateRenderer(options) {
                 instance.isMounted = true;
             } else {
                 // 更新逻辑
+                let prev = instance.subTree; // 上一次的渲染vnode结果
+                let next = instance.render(); // 下一次的
+                console.log(prev, next);
             }
         });
     };

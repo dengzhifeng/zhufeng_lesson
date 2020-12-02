@@ -3,16 +3,16 @@
  * @author: steve.deng
  * @Date: 2020-11-30 16:50:54
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-30 17:22:44
+ * @LastEditTime: 2020-12-02 11:23:32
  */
-function patchClass(el, value) {
+export function patchClass(el, value) {
     if (value == null) {
         value = '';
     }
     el.className = value;
 }
 // {color: red}
-function pathchStyle(el, prev, next) {
+export function patchStyle(el, prev, next) {
     const style = el.style;
     if (!next) {
         el.removeAttribute(style); // 说明不需要有样式
@@ -30,7 +30,7 @@ function pathchStyle(el, prev, next) {
     }
 }
 
-function patchAttr(el, key, value) {
+export function patchAttr(el, key, value) {
     if (value == null) {
         el.removeAttribute(key);
     } else {
@@ -45,7 +45,8 @@ export function patchProp(el, key, prevValue, nextValue) {
             break;
         case 'style':
             //{color: 'red'}
-            pathchStyle(el, prevValue, nextValue);
+            patchStyle(el, prevValue, nextValue);
+            break;
         default:
             patchAttr(el, key, nextValue);
             break;

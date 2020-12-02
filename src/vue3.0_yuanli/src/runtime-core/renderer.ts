@@ -1,3 +1,4 @@
+import { effect } from '../reactivity/index';
 import { ShapeFlags } from '../shared/index';
 import { createAppAPI } from './apiCreateApp';
 import { createComponentInstance, setupComponent } from './component';
@@ -7,7 +8,7 @@ import { createComponentInstance, setupComponent } from './component';
  * @author: steve.deng
  * @Date: 2020-11-30 16:32:43
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-01 18:13:02
+ * @LastEditTime: 2020-12-02 11:19:56
  */
 export function createRenderer(options) {
     // options是平台传过来的dom方法， 不同平台实现不同操作逻辑 如小程序 浏览器等
@@ -19,8 +20,37 @@ function baseCreateRenderer(options) {
         // 我需要将虚拟节点 变成真实节点 挂载到容器上
         patch(null, vnode, container);
     };
+    const {
+        createElement: hostCreateElement,
+        patchProp: hostPatchProp,
+        setElementText: hostSetElementText,
+        insert: hostInsert,
+        remove: hostRemove
+    } = options;
+    const mountElement = (vnode, container) => {
+        // vnode虚拟节点 container就是容器
+        console.log(vnode, container);
+        let { shapeFlag, props } = vnode;
+        let el = (vnode.el = hostCreateElement(vnode.type));
 
-    const mountElement = (n2, container) => {};
+        // 创建儿子节点 看是不是文本孩子
+        if (shapeFlag & ShapeFlags.TEXT_CHILDREN) {
+            hostSetElementText(el, vnode.children);
+        } else if (shapeFlag & ShapeFlags.ARRAY_CHILDREN) {
+            mountChildren(vnode.children, el);
+        }
+        if (props) {
+            for (let key in props) {
+                hostPatchProp(el, key, null, props[key]);
+            }
+        }
+        hostInsert(el, container);
+    };
+    const mountChildren = (children, container) => {
+        for (let i = 0; i < children.length; i++) {
+            patch(null, children[i], container);
+        }
+    };
     const patchElement = (n1, n2, container) => {};
     const mountComponent = (initialVnode, container) => {
         // 组件挂载逻辑 1.创建组件的实例  2.找到组件的render方法  3.执行render
@@ -29,7 +59,21 @@ function baseCreateRenderer(options) {
             initialVnode
         ));
         setupComponent(instance); // 找到组件的setup方法
-        // 调用render方法
+        // 调用render方法 如果render方法中数据变化了 会重新渲染
+        setupRenderEffect(instance, initialVnode, container); // 给组件创建一个effect 用于渲染 相当于watch
+    };
+
+    const setupRenderEffect = (instance, initialVnode, container) => {
+        effect(function componentEffect() {
+            if (!instance.isMounted) {
+                // 渲染组件中的内容
+                const subTree = (instance.subTree = instance.render()); // 组件对应渲染的结果
+                patch(null, subTree, container);
+                instance.isMounted = true;
+            } else {
+                // 更新逻辑
+            }
+        });
     };
     const updateComponent = (n1, n2, container) => {};
 

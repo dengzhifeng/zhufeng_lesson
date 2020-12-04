@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-26 17:59:00
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-04 22:56:06
+ * @LastEditTime: 2020-12-01 17:48:45
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -22,17 +22,20 @@
         let { createApp, reactive, h } = Vue;
         let App = {
             setup() {
-                let state = reactive({ flag: true }); // 原理 proxy
-                setTimeout(() => {
-                    state.flag = !state.flag;
-                }, 2000);
+                let state = reactive({ name: 'zf', age: 11 }); // 原理 proxy
+                // render函数
                 return () => {
-                    return state.flag
-                        ? h('div', { style: { color: 'red' } }, 'hello')
-                        : h('p', { style: { color: 'blue' } }, 'world');
+                    // react => createElement();
+                    return h(
+                        'div',
+                        { style: { color: 'red' } },
+                        state.name + ':' + state.age
+                    );
                 };
             }
         };
+        // 组件是怎样渲染 初始化的流程
+        // vue3 runtime-dom针对浏览器平台   runtime-code核心
         createApp(App).mount('#app');
     </script>
 </html>

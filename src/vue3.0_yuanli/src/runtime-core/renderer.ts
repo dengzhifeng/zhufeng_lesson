@@ -8,7 +8,7 @@ import { createComponentInstance, setupComponent } from './component';
  * @author: steve.deng
  * @Date: 2020-11-30 16:32:43
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-02 11:27:04
+ * @LastEditTime: 2020-12-04 23:38:34
  */
 export function createRenderer(options) {
     // options是平台传过来的dom方法， 不同平台实现不同操作逻辑 如小程序 浏览器等
@@ -20,7 +20,6 @@ function baseCreateRenderer(options) {
         // 我需要将虚拟节点 变成真实节点 挂载到容器上
         patch(null, vnode, container);
     };
-    debugger;
     const {
         createElement: hostCreateElement,
         patchProp: hostPatchProp,
@@ -52,7 +51,26 @@ function baseCreateRenderer(options) {
             patch(null, children[i], container);
         }
     };
-    const patchElement = (n1, n2, container) => {};
+    const patchProps = (oldProps, newProps, el) => {
+        if (oldProps !== newProps) {
+            // 新的属性 需要覆盖老的
+            for (let key in newProps) {
+                const prev = oldProps[key];
+                const next = newProps[key];
+                if (prev !== next) {
+                    hostPatchProp(el, key);
+                }
+            }
+            // 老的有的属性 新的没有 将老的删除
+        }
+    };
+    const patchElement = (n1, n2, container) => {
+        // 如果n1和n2类型一样  复用n1的真实节点el
+        let el = (n2.el = n1.el);
+        const oldProps = n1.props || {};
+        const newProps = n2.props || {};
+        patchProps(oldProps, newProps, el);
+    };
     const mountComponent = (initialVnode, container) => {
         // 组件挂载逻辑 1.创建组件的实例  2.找到组件的render方法  3.执行render
         // 组件实例要记录当前组件的状态
@@ -76,6 +94,7 @@ function baseCreateRenderer(options) {
                 let prev = instance.subTree; // 上一次的渲染vnode结果
                 let next = instance.render(); // 下一次的
                 console.log(prev, next);
+                patch(prev, next, container);
             }
         });
     };
@@ -98,12 +117,24 @@ function baseCreateRenderer(options) {
             updateComponent(n1, n2, container);
         }
     };
+    const isSameVnodeType = (n1, n2) => {
+        return n1.type == n2.type && n1.key === n2.key;
+    };
+
     const patch = (n1, n2, container) => {
         // 20 代表组件孩子里有数组
         // 10100
         // 00100
         // 00100
         let { shapeFlag } = n2;
+        console.log(n1, n2);
+        // 如果不相同类型节点
+        if (n1 && !isSameVnodeType(n1, n2)) {
+            // 删除老节点 老节点虚拟节点对应着真实节点
+            hostRemove(n1.el); // removeChild
+            n1 = null;
+        }
+
         // 与运算 左右 都是1 才是1
         if (shapeFlag & ShapeFlags.ELEMENT) {
             processElement(n1, n2, container);

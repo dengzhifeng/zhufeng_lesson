@@ -58,10 +58,15 @@ function baseCreateRenderer(options) {
                 const prev = oldProps[key];
                 const next = newProps[key];
                 if (prev !== next) {
-                    hostPatchProp(el, key);
+                    hostPatchProp(el, key, prev, next);
                 }
             }
             // 老的有的属性 新的没有 将老的删除
+            for(const key in oldProps) {
+                if(!(key in newProps)) {
+                    hostPatchProp(el, key, oldProps[key], null)
+                }
+            }
         }
     };
     const patchElement = (n1, n2, container) => {

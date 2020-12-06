@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-30 16:50:54
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-02 11:23:32
+ * @LastEditTime: 2020-12-06 12:32:28
  */
 export function patchClass(el, value) {
     if (value == null) {
@@ -21,6 +21,7 @@ export function patchStyle(el, prev, next) {
             style[key] = next[key];
         }
         if (prev) {
+            // 删除 新的style没有的属性
             for (let key in prev) {
                 if (next[key] == null) {
                     style[key] = '';

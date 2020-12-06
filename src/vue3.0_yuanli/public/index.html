@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-26 17:59:00
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-04 22:56:06
+ * @LastEditTime: 2020-12-06 20:26:13
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +29,7 @@
                 return () => {
                     return state.flag
                         ? h('div', { style: { color: 'red' } }, 'hello')
-                        : h('p', { style: { color: 'blue' } }, 'world');
+                        : h('p', { style: { color: 'blue' }, a: 1 }, 'world');
                 };
             }
         };

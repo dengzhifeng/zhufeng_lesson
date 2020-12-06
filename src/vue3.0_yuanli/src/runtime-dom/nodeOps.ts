@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-30 16:26:16
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-11-30 16:31:15
+ * @LastEditTime: 2020-12-06 12:34:46
  */
 export const nodeOps = {
     createElement(type) {
@@ -19,7 +19,7 @@ export const nodeOps = {
     remove(child) {
         const parent = child.parentNode;
         if (parent) {
-            parent.removeChild(parent);
+            parent.removeChild(child);
         }
     }
 };

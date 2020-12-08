@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-01 12:30:44
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-01 17:35:54
+ * @LastEditTime: 2020-12-08 23:05:40
  */
 export const enum ShapeFlags {
     ELEMENT = 1,
@@ -12,3 +12,11 @@ export const enum ShapeFlags {
     TEXT_CHILDREN = 1 << 3, // 文本孩子 8  2的3次方
     ARRAY_CHILDREN = 1 << 4 // 数组孩子 16  2的4次方
 }
+
+// 000001   1*2的0次方 1
+// 010000   1*2的4次方 = 16
+
+// 000001 | 010000 = 010001 = 17
+// 010001 & 010000 = 010000 = 16
+
+// 010001 & 001000 = 0

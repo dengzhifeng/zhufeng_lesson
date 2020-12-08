@@ -8,7 +8,7 @@ import { createComponentInstance, setupComponent } from './component';
  * @author: steve.deng
  * @Date: 2020-11-30 16:32:43
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-04 23:38:48
+ * @LastEditTime: 2020-12-08 23:26:19
  */
 export function createRenderer(options) {
     // options是平台传过来的dom方法， 不同平台实现不同操作逻辑 如小程序 浏览器等
@@ -62,19 +62,44 @@ function baseCreateRenderer(options) {
                 }
             }
             // 老的有的属性 新的没有 将老的删除
-            for(const key in oldProps) {
-                if(!(key in newProps)) {
-                    hostPatchProp(el, key, oldProps[key], null)
+            for (const key in oldProps) {
+                if (!(key in newProps)) {
+                    hostPatchProp(el, key, oldProps[key], null);
                 }
             }
         }
+    };
+    const patchChildren = (n1, n2, el) => {
+        const c1 = n1.children; // 获取所有老的节点
+        const c2 = n2.children; // 获取新的所有节点
+        const prevShapeFlag = n1.shapeFlag; // 上一次的元素的类型
+        const shapeFlag = n2.shapeFlag; // 这一次的元素类型
+        // 新的是文本元素
+        if (shapeFlag & ShapeFlags.TEXT_CHILDREN) {
+            if (c2 !== c1) {
+                hostSetElementText(el, c2);
+            }
+        } else {
+            // 新的是数组
+            if (prevShapeFlag & ShapeFlags.ARRAY_CHILDREN) {
+                // 老的是数组 新的是数组 =》 diff算法
+                console.log('diff算法');
+            }
+        }
+        // 4种情况
+        // 老的是文本 新的是文本  =》 新的覆盖掉老的
+        // 老的是数组 新的是文本 =》 覆盖掉老的即可
+        // 老的是文本 新的是数组 =》 移除老的文本 生成新的节点塞进去
+        // 老的是数组 新的是数组 =》 diff算法
     };
     const patchElement = (n1, n2, container) => {
         // 如果n1和n2类型一样  复用n1的真实节点el
         let el = (n2.el = n1.el);
         const oldProps = n1.props || {};
         const newProps = n2.props || {};
-        patchProps(oldProps, newProps, el);
+        patchProps(oldProps, newProps, el); // 比对前后属性的元素差异
+
+        patchChildren(n1, n2, el); // 比对孩子差异
     };
     const mountComponent = (initialVnode, container) => {
         // 组件挂载逻辑 1.创建组件的实例  2.找到组件的render方法  3.执行render

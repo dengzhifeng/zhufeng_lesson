@@ -8,7 +8,7 @@ import { createComponentInstance, setupComponent } from './component';
  * @author: steve.deng
  * @Date: 2020-11-30 16:32:43
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-08 23:29:04
+ * @LastEditTime: 2020-12-09 23:14:26
  */
 export function createRenderer(options) {
     // options是平台传过来的dom方法， 不同平台实现不同操作逻辑 如小程序 浏览器等
@@ -69,6 +69,22 @@ function baseCreateRenderer(options) {
             }
         }
     };
+    const patchKeyChildren = (c1, c2, el) => {
+        // 内部有优化策略
+        //abc
+        // abde
+        let i = 0;
+        let e1 = c1.length - 1; //老儿子最后一项的索引
+        let e2 = c2.length - 1; // 新儿子的最后一项索引
+
+        while (i <= e1 && i <= e2) {
+            const n1 = c1[i];
+            const n2 = c2[i];
+            if (isSameVnodeType(n1, n2)) {
+                patch(n1, n2, el);
+            }
+        }
+    };
     const patchChildren = (n1, n2, el) => {
         const c1 = n1.children; // 获取所有老的节点
         const c2 = n2.children; // 获取新的所有节点
@@ -76,14 +92,32 @@ function baseCreateRenderer(options) {
         const shapeFlag = n2.shapeFlag; // 这一次的元素类型
         // 新的是文本元素
         if (shapeFlag & ShapeFlags.TEXT_CHILDREN) {
+            // 老的是文本 新的是文本  =》 新的覆盖掉老的
+            // 老的是数组 新的是文本 =》 覆盖掉老的即可
             if (c2 !== c1) {
                 hostSetElementText(el, c2);
             }
         } else {
             // 新的是数组
+
+            // 新的是数组 老的是数组
             if (prevShapeFlag & ShapeFlags.ARRAY_CHILDREN) {
                 // 老的是数组 新的是数组 =》 diff算法
                 console.log('diff算法');
+                patchKeyChildren(c1, c2, el);
+            } else {
+                // 老的是文本 新的是数组 =》 移除老的文本 生成新的节点塞进去
+                if (prevShapeFlag & ShapeFlags.TEXT_CHILDREN) {
+                    // 移除老的文本
+                    hostSetElementText(el, '');
+                }
+                // 新的是数组
+                if (shapeFlag & ShapeFlags.ARRAY_CHILDREN) {
+                    // 把新的元素进行股灾 生成新的节点塞进去
+                    for (let i = 0; i < c2.length; i++) {
+                        patch(null, c2[i], el);
+                    }
+                }
             }
         }
         // 4种情况

@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-26 17:59:00
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-08 23:25:02
+ * @LastEditTime: 2020-12-09 22:37:12
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -28,8 +28,45 @@
                 }, 2000);
                 return () => {
                     return state.flag
-                        ? h('div', { style: { color: 'red' } }, 'hello')
-                        : h('div', { style: { color: 'blue' }, a: 1 }, 'world');
+                        ? h('div', { style: { color: 'red' } }, [
+                              h(
+                                  'li',
+                                  { key: 'A', style: { background: 'red' } },
+                                  'A'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'B', style: { background: 'yellow' } },
+                                  'B'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'C', style: { background: 'blue' } },
+                                  'C'
+                              )
+                          ])
+                        : h('div', { style: { color: 'blue' }, a: 1 }, [
+                              h(
+                                  'li',
+                                  { key: 'A', style: { background: 'red' } },
+                                  'A'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'B', style: { background: 'yellow' } },
+                                  'B'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'D', style: { background: 'green' } },
+                                  'D'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'E', style: { background: 'purple' } },
+                                  'E'
+                              )
+                          ]);
                 };
             }
         };

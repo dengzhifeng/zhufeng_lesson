@@ -8,7 +8,7 @@ import { createComponentInstance, setupComponent } from './component';
  * @author: steve.deng
  * @Date: 2020-11-30 16:32:43
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-09 23:14:26
+ * @LastEditTime: 2020-12-10 22:34:56
  */
 export function createRenderer(options) {
     // options是平台传过来的dom方法， 不同平台实现不同操作逻辑 如小程序 浏览器等
@@ -81,9 +81,25 @@ function baseCreateRenderer(options) {
             const n1 = c1[i];
             const n2 = c2[i];
             if (isSameVnodeType(n1, n2)) {
-                patch(n1, n2, el);
+                patch(n1, n2, el); // 会递归比对子元素
+            } else {
+                break;
             }
+            i++;
         }
+        console.log(i);
+        while (i <= e1 && i <= e2) {
+            const n1 = c1[e1];
+            const n2 = c2[e2];
+            if (isSameVnodeType(n1, n2)) {
+                patch(n1, n2, el);
+            } else {
+                break;
+            }
+            e1--;
+            e2--;
+        }
+        console.log(i, e1, e2);
     };
     const patchChildren = (n1, n2, el) => {
         const c1 = n1.children; // 获取所有老的节点

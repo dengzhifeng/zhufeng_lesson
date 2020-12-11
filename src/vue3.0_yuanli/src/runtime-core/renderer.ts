@@ -8,7 +8,7 @@ import { createComponentInstance, setupComponent } from './component';
  * @author: steve.deng
  * @Date: 2020-11-30 16:32:43
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-10 22:55:18
+ * @LastEditTime: 2020-12-11 18:08:26
  */
 export function createRenderer(options) {
     // options是平台传过来的dom方法， 不同平台实现不同操作逻辑 如小程序 浏览器等
@@ -71,7 +71,7 @@ function baseCreateRenderer(options) {
     };
     const patchKeyChildren = (c1, c2, el) => {
         // 内部有优化策略
-        //abc
+        // abc
         // abde
         let i = 0;
         let e1 = c1.length - 1; //老儿子最后一项的索引
@@ -85,7 +85,7 @@ function baseCreateRenderer(options) {
             } else {
                 break;
             }
-            i++;
+            i++; //2
         }
         console.log(i);
         while (i <= e1 && i <= e2) {
@@ -99,7 +99,25 @@ function baseCreateRenderer(options) {
             e1--;
             e2--;
         }
-        console.log(i, e1, e2);
+        // abc
+        // eabc  第一次就跳出 i = 0
+        // 如果是
+        //  abc   2开始        1  0  -1
+        // dabc   3           2  1  0
+        console.log(i, e1, e2); // 0 -1 0
+
+        // 只考虑元素新增和删除的情况
+        // abc => abcd   (i=3, e1=2 e2=3)
+        // abc => dabc   (i=0, e1=-1, e2=0)
+        // 只要i > e1  标识新增属性
+        if (i > e1) {
+            // 说明有新增
+            if (i <= e2) {
+                // 表示有新增的部分
+                // 先根据e2 取他的下一个元素和数组长度进行比较
+                const next;
+            }
+        }
     };
     const patchChildren = (n1, n2, el) => {
         const c1 = n1.children; // 获取所有老的节点

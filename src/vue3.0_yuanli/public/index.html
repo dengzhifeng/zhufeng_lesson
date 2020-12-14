@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-11-26 17:59:00
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-11 17:50:41
+ * @LastEditTime: 2020-12-14 12:18:35
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -31,40 +31,82 @@
                         ? h('div', { style: { color: 'red' } }, [
                               h(
                                   'li',
-                                  { key: 'A', style: { background: 'red' } },
+                                  { key: 'A', style: { background: 'white' } },
                                   'A'
                               ),
                               h(
                                   'li',
-                                  { key: 'B', style: { background: 'yellow' } },
+                                  { key: 'B', style: { background: 'white' } },
                                   'B'
                               ),
                               h(
                                   'li',
-                                  { key: 'C', style: { background: 'blue' } },
+                                  { key: 'C', style: { background: 'white' } },
                                   'C'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'D', style: { background: 'white' } },
+                                  'D'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'E', style: { background: 'white' } },
+                                  'E'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'F', style: { background: 'white' } },
+                                  'F'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'G', style: { background: 'white' } },
+                                  'G'
                               )
                           ])
                         : h('div', { style: { color: 'blue' }, a: 1 }, [
                               h(
                                   'li',
-                                  { key: 'A', style: { background: 'red' } },
+                                  { key: 'A', style: { background: 'white' } },
                                   'A'
                               ),
                               h(
                                   'li',
-                                  { key: 'B', style: { background: 'yellow' } },
+                                  { key: 'B', style: { background: 'white' } },
                                   'B'
+                              ),
+
+                              h(
+                                  'li',
+                                  { key: 'E', style: { background: 'white' } },
+                                  'E'
                               ),
                               h(
                                   'li',
-                                  { key: 'C', style: { background: 'green' } },
+                                  { key: 'D', style: { background: 'white' } },
+                                  'D'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'C', style: { background: 'white' } },
                                   'C'
                               ),
                               h(
                                   'li',
-                                  { key: 'D', style: { background: 'purple' } },
-                                  'D'
+                                  { key: 'H', style: { background: 'white' } },
+                                  'H'
+                              ),
+
+                              h(
+                                  'li',
+                                  { key: 'F', style: { background: 'white' } },
+                                  'F'
+                              ),
+                              h(
+                                  'li',
+                                  { key: 'G', style: { background: 'white' } },
+                                  'G'
                               )
                           ]);
                 };

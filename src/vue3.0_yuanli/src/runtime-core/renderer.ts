@@ -8,7 +8,7 @@ import { createComponentInstance, setupComponent } from './component';
  * @author: steve.deng
  * @Date: 2020-11-30 16:32:43
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-11 18:08:26
+ * @LastEditTime: 2020-12-14 15:09:15
  */
 export function createRenderer(options) {
     // options是平台传过来的dom方法， 不同平台实现不同操作逻辑 如小程序 浏览器等
@@ -27,7 +27,7 @@ function baseCreateRenderer(options) {
         insert: hostInsert,
         remove: hostRemove
     } = options;
-    const mountElement = (vnode, container) => {
+    const mountElement = (vnode, container, anchor) => {
         // vnode虚拟节点 container就是容器
         console.log(vnode, container);
         let { shapeFlag, props } = vnode;
@@ -44,7 +44,7 @@ function baseCreateRenderer(options) {
                 hostPatchProp(el, key, null, props[key]);
             }
         }
-        hostInsert(el, container);
+        hostInsert(el, container, anchor);
     };
     const mountChildren = (children, container) => {
         for (let i = 0; i < children.length; i++) {
@@ -109,14 +109,70 @@ function baseCreateRenderer(options) {
         // 只考虑元素新增和删除的情况
         // abc => abcd   (i=3, e1=2 e2=3)
         // abc => dabc   (i=0, e1=-1, e2=0)
+
         // 只要i > e1  标识新增属性
         if (i > e1) {
             // 说明有新增
             if (i <= e2) {
                 // 表示有新增的部分
                 // 先根据e2 取他的下一个元素和数组长度进行比较
-                const next;
+                const nextPos = e2 + 1;
+                const anchor = nextPos < c2.length ? c2[nextPos].el : null;
+                while (i <= e2) {
+                    patch(null, c2[i], el, anchor);
+                    i++;
+                }
             }
+            // abcd -> abc (i=3 e1=3 e2=2);
+        } else if (i > e2) {
+            // 删除
+            while (i <= e1) {
+                hostRemove(c1[i].el);
+                i++;
+            }
+        } else {
+            // 无规律的情况 diff情况
+            // ab[cde]fg    // i=2 e1=4 e2=5  s1=2
+            // ab[edch]fg    // i=2  e2=5  s2=2   => [4,3,2,0] -> [5,4,3,0]
+            const s1 = i;
+            const s2 = i;
+
+            // 新的索引和key做成一个映射表
+            const keyToNewIndexMap = new Map();
+            for (let i = s2; i <= e2; i++) {
+                const nextChild = c2[i];
+                keyToNewIndexMap.set(nextChild.key, i);
+            }
+            const toBePatched = e2 - s2 + 1; //4
+            const newIndexToOldMapIndex = new Array(toBePatched).fill(0);
+            // 只是做形同属性的diff  但是位置可能还不对
+            for (let i = s1; i <= e1; i++) {
+                const prevChild = c1[i];
+                let newIndex = keyToNewIndexMap.get(prevChild.key); // 获取新的索引
+                if (newIndex == undefined) {
+                    hostRemove(prevChild.el); // 老的有 新的没有直接删除
+                } else {
+                    newIndexToOldMapIndex[newIndex - s2] = i + 1; // +1 防止一开始就是0 没变化
+                    patch(prevChild, c2[newIndex], el);
+                }
+            }
+            console.log(newIndexToOldMapIndex);
+            for (let i = toBePatched - 1; i >= 0; i--) {
+                const nextIndex = s2 + i; //[edch]  找到了h
+                const nextChild = c2[nextIndex]; // 找到h
+                let anchor =
+                    nextIndex + 1 < c2.length ? c2[nextIndex + 1].el : null;
+                if (newIndexToOldMapIndex[i] == 0) {
+                    // 这是新元素 直接创建插入到当前原色的下一个即可
+                    patch(null, nextChild, el, anchor);
+                } else {
+                    // 根据参照物 将节点移动过去 所有节点都要移动 非最优
+                    hostInsert(nextChild.el, el, anchor);
+                }
+            }
+
+            //ab [cde]
+            //ab [dech]  [3,4,2,0] -> 递增序列 0 1索引
         }
     };
     const patchChildren = (n1, n2, el) => {
@@ -198,15 +254,15 @@ function baseCreateRenderer(options) {
     };
     const updateComponent = (n1, n2, container) => {};
 
-    const processElement = (n1, n2, container) => {
+    const processElement = (n1, n2, container, anchor) => {
         if (n1 == null) {
-            mountElement(n2, container);
+            mountElement(n2, container, anchor);
         } else {
             patchElement(n1, n2, container);
         }
     };
 
-    const processComponent = (n1, n2, container) => {
+    const processComponent = (n1, n2, container, anchor) => {
         if (n1 == null) {
             // 根节点 mount 组件初始化
             mountComponent(n2, container);
@@ -219,7 +275,7 @@ function baseCreateRenderer(options) {
         return n1.type == n2.type && n1.key === n2.key;
     };
 
-    const patch = (n1, n2, container) => {
+    const patch = (n1, n2, container, anchor = null) => {
         // 20 代表组件孩子里有数组
         // 10100
         // 00100
@@ -235,9 +291,9 @@ function baseCreateRenderer(options) {
 
         // 与运算 左右 都是1 才是1
         if (shapeFlag & ShapeFlags.ELEMENT) {
-            processElement(n1, n2, container);
+            processElement(n1, n2, container, anchor);
         } else if (shapeFlag & ShapeFlags.STATEFUL_COMPONENT) {
-            processComponent(n1, n2, container);
+            processComponent(n1, n2, container, anchor);
         }
     };
 

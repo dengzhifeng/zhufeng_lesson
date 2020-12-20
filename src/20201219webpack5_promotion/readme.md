@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-19 06:40:54
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-19 08:26:48
+ * @LastEditTime: 2020-12-20 21:57:53
 -->
 
 ## 1.安装依赖包
@@ -68,4 +68,52 @@ resolve:{
 
 ```
 cnpm i bootstrap css-loader style-loader -S
+```
+
+### 3.2
+
+-   利用缓存
+-   重新构件时会尝试读取缓存， 从而提高打包速度
+-   缓存存放位置 node_modules/.cache/babel-loader
+
+```
+  {
+                        loader: 'babel-loader',
+                        options: {
+                            cacheDirectory: true // 自动babel缓存
+                        }
+                    }
+```
+
+### 3.3 cache-loader
+
+-   在一些性能开销大的 loader 之前添加此 loader, 可以将结果缓存在磁盘中
+-   默认保存在 node_modules/.cache/cache-loader 目录下
+
+```
+cnpm i cache-loader -D
+```
+
+### 3.4 hard-source-webpack-plugin
+
+-   hardSourceWebpackPlugin 为模块提供了中间缓存， 缓存默认存放的路径是 node_modules/.cache/hard-source
+-   首次构建无太大变化， 第二次构建时间大约可以减少 80%
+-   webpack5 已经内置了模块缓存，不需要再使用此插件
+
+```
+cnpm i hard-source-webpack-plugin -D
+```
+
+## 4.编译体积优化
+
+### 4.1 压缩 js、css、HTML 和图片
+
+-   optimize-css-assets-webpack-plugin 是一个优化和压缩 css 资源的插件
+-   terser-webpack-plugin 是一个优化和压缩 js 资源的插件
+-   image-webpack-loader 可以帮助我们对图片进行压缩和优化
+
+### 4.1.2 安装
+
+```
+cnpm i terser-webpack-plugin optimize-css-assets-webpack-plugin image-webpack-loader -D
 ```

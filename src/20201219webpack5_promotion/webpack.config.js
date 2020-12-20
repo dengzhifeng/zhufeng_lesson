@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-19 06:51:55
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-20 22:01:41
+ * @LastEditTime: 2020-12-21 07:51:07
  */
 const path = require('path');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
@@ -18,7 +18,13 @@ const webpack = require('webpack');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const ImageWebpackLoader = require('image-webpack-loader');
-
+const PurgecssWebpackPlugin = require('purgecss-webpack-plugin');
+// 因为css和js加载可以并行 所以我们可以通过此插件提取css为单独的文件 然后去掉无用css 进行压缩
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const glob = require('glob');
+const PATHS = {
+    src: path.resolve(__dirname, 'src')
+};
 const bootstrap = path.resolve(
     __dirname,
     'node_modules/bootstrap/dist/css/bootstrap.css'
@@ -34,9 +40,10 @@ module.exports = smw.wrap({
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js'
     },
+    // js压缩
     optimization: {
         minimize: true, // 开始最小化
-        minimizer: [new TerserPlugin()]
+        minimizer: [new TerserWebpackPlugin()]
     },
     resolve: {
         extensions: ['.js', '.jsx', '.json'], // 指定扩展名
@@ -74,11 +81,39 @@ module.exports = smw.wrap({
                 ]
             },
             {
+                test: /\.(jpg|png|gif|bmp)$/,
+                use: [
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            mozjpeg: {
+                                progressive: true
+                            },
+                            // optipng.enabled: false will disable optipng
+                            optipng: {
+                                enabled: false
+                            },
+                            pngquant: {
+                                quality: [0.65, 0.9],
+                                speed: 4
+                            },
+                            gifsicle: {
+                                interlaced: false
+                            },
+                            // the webp option will enable WEBP
+                            webp: {
+                                quality: 75
+                            }
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.css$/,
                 use: [
                     'cache-loader',
                     'log-loader',
-                    'style-loader',
+                    MiniCssExtractPlugin.loader,
                     'css-loader'
                 ]
             }
@@ -86,7 +121,19 @@ module.exports = smw.wrap({
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            minify: {
+                // 压缩html
+                collapseWhitespace: true, // 压缩空白
+                removeComments: true // 去除注释
+            }
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[name].css'
+        }),
+        // /**/*   **匹配任意字段 包括路径分隔符  *匹配任意字符 不包含路径分隔符
+        new PurgecssWebpackPlugin({
+            paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
         }),
         new FriendlyErrorsWebpackPlugin({
             onErrors: (severity, errors) => {
@@ -107,6 +154,7 @@ module.exports = smw.wrap({
         new webpack.IgnorePlugin({
             resourceRegExp: /^\.\/locale$/, // 资源正则
             contextRegExp: /moment$/ // 上下文， 目录正则
-        })
+        }),
+        new OptimizeCssAssetsWebpackPlugin() // 压缩css
     ]
 });

@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-19 06:40:54
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-20 21:57:53
+ * @LastEditTime: 2020-12-21 07:03:08
 -->
 
 ## 1.安装依赖包
@@ -116,4 +116,14 @@ cnpm i hard-source-webpack-plugin -D
 
 ```
 cnpm i terser-webpack-plugin optimize-css-assets-webpack-plugin image-webpack-loader -D
+```
+
+## 4.2 清除无用的 css
+
+-   purgecss-webpack-plugin 单独提取 css 并清除用不到的 css
+
+### 4.2.1 安装
+
+```
+cnpm i purgecss-webpack-plugin mini-css-extract-plugin -D
 ```

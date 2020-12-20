@@ -1,12 +1,13 @@
 {
-  "hash": "e99c0e956c5e7a42e566",
+  "hash": "394f079c1545f3394839",
   "version": "5.11.0",
-  "time": 2066,
-  "builtAt": 1608471533478,
+  "time": 1871,
+  "builtAt": 1608508318530,
   "publicPath": "auto",
   "outputPath": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/dist",
   "assetsByChunkName": {
     "main": [
+      "main.css",
       "main.js"
     ]
   },
@@ -14,16 +15,18 @@
     {
       "type": "asset",
       "name": "main.js",
-      "size": 917712,
+      "size": 658,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
+        "minimized": true,
         "related": {
+          "license": "main.js.LICENSE.txt",
           "sourceMap": "main.js.map"
         },
-        "size": 917712
+        "size": 658
       },
       "chunkNames": [
         "main"
@@ -36,13 +39,13 @@
         {
           "type": "sourceMap",
           "name": "main.js.map",
-          "size": 1160355,
+          "size": 2668,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 1160355
+            "size": 2668
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -56,6 +59,25 @@
             "main"
           ],
           "isOverSizeLimit": false
+        },
+        {
+          "type": "license",
+          "name": "main.js.LICENSE.txt",
+          "size": 398,
+          "emitted": true,
+          "comparedForEmit": false,
+          "cached": false,
+          "info": {
+            "size": 398
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [],
+          "isOverSizeLimit": false
         }
       ],
       "chunks": [
@@ -67,12 +89,12 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 621,
+      "size": 406,
       "emitted": false,
       "comparedForEmit": true,
       "cached": false,
       "info": {
-        "size": 621
+        "size": 406
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -80,6 +102,29 @@
       "auxiliaryChunkIdHints": [],
       "related": {},
       "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "main.css",
+      "size": 15,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 15
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "main"
+      ],
       "auxiliaryChunks": [],
       "isOverSizeLimit": false
     }
@@ -90,10 +135,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 907491,
+      "size": 884,
       "sizes": {
-        "javascript": 906437,
-        "runtime": 1054
+        "javascript": 555,
+        "css/mini-extract": 55,
+        "runtime": 274
       },
       "names": [
         "main"
@@ -103,12 +149,13 @@
         "main"
       ],
       "files": [
+        "main.css",
         "main.js"
       ],
       "auxiliaryFiles": [
         "main.js.map"
       ],
-      "hash": "76aae48ee61c795b9431",
+      "hash": "d86adad457ef19aacc2e",
       "childrenByOrder": {},
       "id": "main",
       "siblings": [],
@@ -118,771 +165,20 @@
         {
           "type": "module",
           "moduleType": "javascript/auto",
-          "size": 316,
+          "size": 50,
           "sizes": {
-            "javascript": 316
+            "javascript": 50
           },
           "built": true,
           "codeGenerated": true,
           "cached": false,
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "name": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "index": 8,
-          "preOrderIndex": 8,
-          "index2": 8,
-          "postOrderIndex": 8,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "dependent": true,
-          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "issuerName": "./src/index.js",
-          "issuerPath": [
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "name": "./src/index.js",
-              "id": "./src/index.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "issuerId": "./src/index.js",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "module": "./src/index.js",
-              "moduleName": "./src/index.js",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "resolvedModule": "./src/index.js",
-              "type": "cjs require",
-              "active": true,
-              "explanation": "",
-              "userRequest": "bootstrap",
-              "loc": "14:0-20",
-              "moduleId": "./src/index.js",
-              "resolvedModuleId": "./src/index.js"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 1
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 720072,
-          "sizes": {
-            "javascript": 720072
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "index": 9,
-          "preOrderIndex": 9,
-          "index2": 7,
-          "postOrderIndex": 7,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "dependent": true,
-          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "issuerName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "issuerPath": [
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "name": "./src/index.js",
-              "id": "./src/index.js"
-            },
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "name": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "id": "./node_modules/bootstrap/dist/css/bootstrap.css"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "issuerId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!!../../../css-loader/dist/cjs.js!./bootstrap.css",
-              "loc": "2:12-84",
-              "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!!../../../css-loader/dist/cjs.js!./bootstrap.css",
-              "loc": "9:17-24",
-              "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!!../../../css-loader/dist/cjs.js!./bootstrap.css",
-              "loc": "13:15-29",
-              "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 2
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 622,
-          "sizes": {
-            "javascript": 622
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "index": 5,
-          "preOrderIndex": 5,
-          "index2": 5,
-          "postOrderIndex": 5,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "dependent": true,
-          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "issuerName": "./src/index.css",
-          "issuerPath": [
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "name": "./src/index.js",
-              "id": "./src/index.js"
-            },
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "name": "./src/index.css",
-              "id": "./src/index.css"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "issuerId": "./src/index.css",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "module": "./src/index.css",
-              "moduleName": "./src/index.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "resolvedModule": "./src/index.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!!../node_modules/css-loader/dist/cjs.js!./index.css",
-              "loc": "2:12-87",
-              "moduleId": "./src/index.css",
-              "resolvedModuleId": "./src/index.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "module": "./src/index.css",
-              "moduleName": "./src/index.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "resolvedModule": "./src/index.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!!../node_modules/css-loader/dist/cjs.js!./index.css",
-              "loc": "9:17-24",
-              "moduleId": "./src/index.css",
-              "resolvedModuleId": "./src/index.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "module": "./src/index.css",
-              "moduleName": "./src/index.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "resolvedModule": "./src/index.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!!../node_modules/css-loader/dist/cjs.js!./index.css",
-              "loc": "13:15-29",
-              "moduleId": "./src/index.css",
-              "resolvedModuleId": "./src/index.css"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 2
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 1605,
-          "sizes": {
-            "javascript": 1605
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
-          "name": "./node_modules/css-loader/dist/runtime/api.js",
-          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
-          "index": 7,
-          "preOrderIndex": 7,
-          "index2": 4,
-          "postOrderIndex": 4,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "dependent": true,
-          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "issuerPath": [
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "name": "./src/index.js",
-              "id": "./src/index.js"
-            },
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "name": "./src/index.css",
-              "id": "./src/index.css"
-            },
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/css-loader/dist/runtime/api.js",
-          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../../../css-loader/dist/runtime/api.js",
-              "loc": "3:0-82",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../../../css-loader/dist/runtime/api.js",
-              "loc": "4:30-57",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
-              "loc": "3:0-89",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
-              "loc": "4:30-57",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
-              "module": "./node_modules/css-loader/dist/runtime/api.js",
-              "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
-              "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
-              "type": "cjs self exports reference",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "loc": "9:0-14",
-              "moduleId": "./node_modules/css-loader/dist/runtime/api.js",
-              "resolvedModuleId": "./node_modules/css-loader/dist/runtime/api.js"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": null,
-          "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 9:0-14"
-          ],
-          "depth": 3
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 2266,
-          "sizes": {
-            "javascript": 2266
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "name": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "index": 6,
-          "preOrderIndex": 6,
-          "index2": 3,
-          "postOrderIndex": 3,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "dependent": true,
-          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "issuerPath": [
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "name": "./src/index.js",
-              "id": "./src/index.js"
-            },
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "name": "./src/index.css",
-              "id": "./src/index.css"
-            },
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../../../css-loader/dist/runtime/cssWithMappingToString.js",
-              "loc": "2:0-111",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../../../css-loader/dist/runtime/cssWithMappingToString.js",
-              "loc": "4:58-95",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "loc": "2:0-118",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "loc": "4:58-95",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "module": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "moduleName": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "resolvedModule": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "type": "cjs self exports reference",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "loc": "15:0-14",
-              "moduleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "resolvedModuleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": null,
-          "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 15:0-14"
-          ],
-          "depth": 3
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 173902,
-          "sizes": {
-            "javascript": 173902
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "name": "./node_modules/moment/moment.js",
-          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "index": 10,
-          "preOrderIndex": 10,
-          "index2": 9,
-          "postOrderIndex": 9,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "dependent": true,
-          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "issuerName": "./src/index.js",
-          "issuerPath": [
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "name": "./src/index.js",
-              "id": "./src/index.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/moment/moment.js",
-          "issuerId": "./src/index.js",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-              "module": "./node_modules/moment/moment.js",
-              "moduleName": "./node_modules/moment/moment.js",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-              "resolvedModule": "./node_modules/moment/moment.js",
-              "type": "cjs self exports reference",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "loc": "8:67-81",
-              "moduleId": "./node_modules/moment/moment.js",
-              "resolvedModuleId": "./node_modules/moment/moment.js"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-              "module": "./node_modules/moment/moment.js",
-              "moduleName": "./node_modules/moment/moment.js",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-              "resolvedModule": "./node_modules/moment/moment.js",
-              "type": "cjs self exports reference",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "loc": "11:2-6",
-              "moduleId": "./node_modules/moment/moment.js",
-              "resolvedModuleId": "./node_modules/moment/moment.js"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-              "module": "./node_modules/moment/moment.js",
-              "moduleName": "./node_modules/moment/moment.js",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-              "resolvedModule": "./node_modules/moment/moment.js",
-              "type": "module decorator",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "loc": "2086:12-18",
-              "moduleId": "./node_modules/moment/moment.js",
-              "resolvedModuleId": "./node_modules/moment/moment.js"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-              "module": "./node_modules/moment/moment.js",
-              "moduleName": "./node_modules/moment/moment.js",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-              "resolvedModule": "./node_modules/moment/moment.js",
-              "type": "cjs self exports reference",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "loc": "2087:12-26",
-              "moduleId": "./node_modules/moment/moment.js",
-              "resolvedModuleId": "./node_modules/moment/moment.js"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "module": "./src/index.js",
-              "moduleName": "./src/index.js",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "resolvedModule": "./src/index.js",
-              "type": "cjs require",
-              "active": true,
-              "explanation": "",
-              "userRequest": "moment",
-              "loc": "16:0-17",
-              "moduleId": "./src/index.js",
-              "resolvedModuleId": "./src/index.js"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": null,
-          "optimizationBailout": [
-            "CommonJS bailout: this is used directly at 11:2-6",
-            "CommonJS bailout: module.exports is used directly at 2087:12-26",
-            "CommonJS bailout: module.exports is used directly at 8:67-81"
-          ],
-          "depth": 1
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 6827,
-          "sizes": {
-            "javascript": 6827
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "name": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "index": 4,
-          "preOrderIndex": 4,
-          "index2": 2,
-          "postOrderIndex": 2,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "dependent": true,
-          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "issuerName": "./src/index.css",
-          "issuerPath": [
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-              "name": "./src/index.js",
-              "id": "./src/index.js"
-            },
-            {
-              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "name": "./src/index.css",
-              "id": "./src/index.css"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "issuerId": "./src/index.css",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "loc": "1:0-82",
-              "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "loc": "9:13-16",
-              "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "module": "./src/index.css",
-              "moduleName": "./src/index.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "resolvedModule": "./src/index.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "loc": "1:0-89",
-              "moduleId": "./src/index.css",
-              "resolvedModuleId": "./src/index.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "module": "./src/index.css",
-              "moduleName": "./src/index.css",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-              "resolvedModule": "./src/index.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "loc": "9:13-16",
-              "moduleId": "./src/index.css",
-              "resolvedModuleId": "./src/index.css"
-            },
-            {
-              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "module": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "moduleName": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "resolvedModule": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "type": "cjs self exports reference",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "loc": "230:0-14",
-              "moduleId": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-              "resolvedModuleId": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": null,
-          "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 230:0-14"
-          ],
-          "depth": 2
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 326,
-          "sizes": {
-            "javascript": 326
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
           "name": "./src/index.css",
           "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
           "index": 3,
           "preOrderIndex": 3,
-          "index2": 6,
-          "postOrderIndex": 6,
+          "index2": 3,
+          "postOrderIndex": 3,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -922,18 +218,16 @@
             }
           ],
           "usedExports": null,
-          "providedExports": [
-            "default"
-          ],
+          "providedExports": [],
           "optimizationBailout": [],
           "depth": 1
         },
         {
           "type": "module",
           "moduleType": "javascript/auto",
-          "size": 294,
+          "size": 298,
           "sizes": {
-            "javascript": 294
+            "javascript": 298
           },
           "built": true,
           "codeGenerated": true,
@@ -943,8 +237,8 @@
           "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
           "index": 0,
           "preOrderIndex": 0,
-          "index2": 10,
-          "postOrderIndex": 10,
+          "index2": 4,
+          "postOrderIndex": 4,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -1060,6 +354,69 @@
         },
         {
           "type": "module",
+          "moduleType": "css/mini-extract",
+          "size": 55,
+          "sizes": {
+            "css/mini-extract": 55
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "css /Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css 0",
+          "name": "css ./node_modules/css-loader/dist/cjs.js!./src/index.css",
+          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "index": 4,
+          "preOrderIndex": 4,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "issuerName": "./src/index.css",
+          "issuerPath": [
+            {
+              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
+              "name": "./src/index.js",
+              "id": "./src/index.js"
+            },
+            {
+              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "name": "./src/index.css",
+              "id": "./src/index.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": "./src/index.css",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "module": "./src/index.css",
+              "moduleName": "./src/index.css",
+              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "resolvedModule": "./src/index.css",
+              "type": "unknown",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "moduleId": "./src/index.css",
+              "resolvedModuleId": "./src/index.css"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 2
+        },
+        {
+          "type": "module",
           "moduleType": "javascript/dynamic",
           "size": 42,
           "sizes": {
@@ -1120,108 +477,6 @@
         {
           "type": "module",
           "moduleType": "runtime",
-          "size": 263,
-          "sizes": {
-            "runtime": 263
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "webpack/runtime/compat get default export",
-          "name": "webpack/runtime/compat get default export",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
-          "optional": false,
-          "orphan": false,
-          "dependent": false,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [],
-          "usedExports": null,
-          "providedExports": [],
-          "optimizationBailout": [],
-          "depth": null
-        },
-        {
-          "type": "module",
-          "moduleType": "runtime",
-          "size": 308,
-          "sizes": {
-            "runtime": 308
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "webpack/runtime/define property getters",
-          "name": "webpack/runtime/define property getters",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
-          "optional": false,
-          "orphan": false,
-          "dependent": false,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [],
-          "usedExports": null,
-          "providedExports": [],
-          "optimizationBailout": [],
-          "depth": null
-        },
-        {
-          "type": "module",
-          "moduleType": "runtime",
-          "size": 86,
-          "sizes": {
-            "runtime": 86
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "webpack/runtime/hasOwnProperty shorthand",
-          "name": "webpack/runtime/hasOwnProperty shorthand",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
-          "optional": false,
-          "orphan": false,
-          "dependent": false,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [],
-          "usedExports": null,
-          "providedExports": [],
-          "optimizationBailout": [],
-          "depth": null
-        },
-        {
-          "type": "module",
-          "moduleType": "runtime",
           "size": 274,
           "sizes": {
             "runtime": 274
@@ -1231,40 +486,6 @@
           "cached": false,
           "identifier": "webpack/runtime/make namespace object",
           "name": "webpack/runtime/make namespace object",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
-          "optional": false,
-          "orphan": false,
-          "dependent": false,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [],
-          "usedExports": null,
-          "providedExports": [],
-          "optimizationBailout": [],
-          "depth": null
-        },
-        {
-          "type": "module",
-          "moduleType": "runtime",
-          "size": 123,
-          "sizes": {
-            "runtime": 123
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "webpack/runtime/node module decorator",
-          "name": "webpack/runtime/node module decorator",
           "nameForCondition": null,
           "index": null,
           "preOrderIndex": null,
@@ -1303,9 +524,9 @@
     {
       "type": "module",
       "moduleType": "javascript/auto",
-      "size": 294,
+      "size": 298,
       "sizes": {
-        "javascript": 294
+        "javascript": 298
       },
       "built": true,
       "codeGenerated": true,
@@ -1315,8 +536,8 @@
       "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
       "index": 0,
       "preOrderIndex": 0,
-      "index2": 10,
-      "postOrderIndex": 10,
+      "index2": 4,
+      "postOrderIndex": 4,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1489,20 +710,20 @@
     {
       "type": "module",
       "moduleType": "javascript/auto",
-      "size": 326,
+      "size": 50,
       "sizes": {
-        "javascript": 326
+        "javascript": 50
       },
       "built": true,
       "codeGenerated": true,
       "cached": false,
-      "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+      "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
       "name": "./src/index.css",
       "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
       "index": 3,
       "preOrderIndex": 3,
-      "index2": 6,
-      "postOrderIndex": 6,
+      "index2": 3,
+      "postOrderIndex": 3,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1541,213 +762,30 @@
         }
       ],
       "usedExports": null,
-      "providedExports": [
-        "default"
-      ],
+      "providedExports": [],
       "optimizationBailout": [],
       "depth": 1
     },
     {
       "type": "module",
-      "moduleType": "javascript/auto",
-      "size": 316,
+      "moduleType": "css/mini-extract",
+      "size": 55,
       "sizes": {
-        "javascript": 316
+        "css/mini-extract": 55
       },
-      "built": true,
+      "built": false,
       "codeGenerated": true,
       "cached": false,
-      "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-      "name": "./node_modules/bootstrap/dist/css/bootstrap.css",
-      "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-      "index": 8,
-      "preOrderIndex": 8,
-      "index2": 8,
-      "postOrderIndex": 8,
-      "cacheable": true,
-      "optional": false,
-      "orphan": false,
-      "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-      "issuerName": "./src/index.js",
-      "issuerPath": [
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "name": "./src/index.js",
-          "id": "./src/index.js"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "./node_modules/bootstrap/dist/css/bootstrap.css",
-      "issuerId": "./src/index.js",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "module": "./src/index.js",
-          "moduleName": "./src/index.js",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "resolvedModule": "./src/index.js",
-          "type": "cjs require",
-          "active": true,
-          "explanation": "",
-          "userRequest": "bootstrap",
-          "loc": "14:0-20",
-          "moduleId": "./src/index.js",
-          "resolvedModuleId": "./src/index.js"
-        }
-      ],
-      "usedExports": null,
-      "providedExports": [
-        "default"
-      ],
-      "optimizationBailout": [],
-      "depth": 1
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "size": 173902,
-      "sizes": {
-        "javascript": 173902
-      },
-      "built": true,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-      "name": "./node_modules/moment/moment.js",
-      "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-      "index": 10,
-      "preOrderIndex": 10,
-      "index2": 9,
-      "postOrderIndex": 9,
-      "cacheable": true,
-      "optional": false,
-      "orphan": false,
-      "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-      "issuerName": "./src/index.js",
-      "issuerPath": [
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "name": "./src/index.js",
-          "id": "./src/index.js"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "./node_modules/moment/moment.js",
-      "issuerId": "./src/index.js",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "module": "./node_modules/moment/moment.js",
-          "moduleName": "./node_modules/moment/moment.js",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "resolvedModule": "./node_modules/moment/moment.js",
-          "type": "cjs self exports reference",
-          "active": true,
-          "explanation": "",
-          "userRequest": null,
-          "loc": "8:67-81",
-          "moduleId": "./node_modules/moment/moment.js",
-          "resolvedModuleId": "./node_modules/moment/moment.js"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "module": "./node_modules/moment/moment.js",
-          "moduleName": "./node_modules/moment/moment.js",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "resolvedModule": "./node_modules/moment/moment.js",
-          "type": "cjs self exports reference",
-          "active": true,
-          "explanation": "",
-          "userRequest": null,
-          "loc": "11:2-6",
-          "moduleId": "./node_modules/moment/moment.js",
-          "resolvedModuleId": "./node_modules/moment/moment.js"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "module": "./node_modules/moment/moment.js",
-          "moduleName": "./node_modules/moment/moment.js",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "resolvedModule": "./node_modules/moment/moment.js",
-          "type": "module decorator",
-          "active": true,
-          "explanation": "",
-          "userRequest": null,
-          "loc": "2086:12-18",
-          "moduleId": "./node_modules/moment/moment.js",
-          "resolvedModuleId": "./node_modules/moment/moment.js"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "module": "./node_modules/moment/moment.js",
-          "moduleName": "./node_modules/moment/moment.js",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/moment/moment.js",
-          "resolvedModule": "./node_modules/moment/moment.js",
-          "type": "cjs self exports reference",
-          "active": true,
-          "explanation": "",
-          "userRequest": null,
-          "loc": "2087:12-26",
-          "moduleId": "./node_modules/moment/moment.js",
-          "resolvedModuleId": "./node_modules/moment/moment.js"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "module": "./src/index.js",
-          "moduleName": "./src/index.js",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "resolvedModule": "./src/index.js",
-          "type": "cjs require",
-          "active": true,
-          "explanation": "",
-          "userRequest": "moment",
-          "loc": "16:0-17",
-          "moduleId": "./src/index.js",
-          "resolvedModuleId": "./src/index.js"
-        }
-      ],
-      "usedExports": null,
-      "providedExports": null,
-      "optimizationBailout": [
-        "CommonJS bailout: this is used directly at 11:2-6",
-        "CommonJS bailout: module.exports is used directly at 2087:12-26",
-        "CommonJS bailout: module.exports is used directly at 8:67-81"
-      ],
-      "depth": 1
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "size": 6827,
-      "sizes": {
-        "javascript": 6827
-      },
-      "built": true,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-      "name": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-      "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
+      "identifier": "css /Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css 0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js!./src/index.css",
+      "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
       "index": 4,
       "preOrderIndex": 4,
       "index2": 2,
       "postOrderIndex": 2,
-      "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+      "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
       "issuerName": "./src/index.css",
       "issuerPath": [
         {
@@ -1756,7 +794,7 @@
           "id": "./src/index.js"
         },
         {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
           "name": "./src/index.css",
           "id": "./src/index.css"
         }
@@ -1764,7 +802,7 @@
       "failed": false,
       "errors": 0,
       "warnings": 0,
-      "id": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
+      "id": null,
       "issuerId": "./src/index.css",
       "chunks": [
         "main"
@@ -1772,623 +810,23 @@
       "assets": [],
       "reasons": [
         {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "loc": "1:0-82",
-          "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "loc": "9:13-16",
-          "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
           "module": "./src/index.css",
           "moduleName": "./src/index.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/_mini-css-extract-plugin@1.3.3@mini-css-extract-plugin/dist/loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
           "resolvedModule": "./src/index.css",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "loc": "1:0-89",
-          "moduleId": "./src/index.css",
-          "resolvedModuleId": "./src/index.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "module": "./src/index.css",
-          "moduleName": "./src/index.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "resolvedModule": "./src/index.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "loc": "9:13-16",
-          "moduleId": "./src/index.css",
-          "resolvedModuleId": "./src/index.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "module": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "moduleName": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "resolvedModule": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "type": "cjs self exports reference",
+          "type": "unknown",
           "active": true,
           "explanation": "",
           "userRequest": null,
-          "loc": "230:0-14",
-          "moduleId": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
-          "resolvedModuleId": "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js"
+          "moduleId": "./src/index.css",
+          "resolvedModuleId": "./src/index.css"
         }
       ],
       "usedExports": null,
       "providedExports": null,
-      "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 230:0-14"
-      ],
-      "depth": 2
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "size": 622,
-      "sizes": {
-        "javascript": 622
-      },
-      "built": true,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-      "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-      "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-      "index": 5,
-      "preOrderIndex": 5,
-      "index2": 5,
-      "postOrderIndex": 5,
-      "cacheable": true,
-      "optional": false,
-      "orphan": false,
-      "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-      "issuerName": "./src/index.css",
-      "issuerPath": [
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "name": "./src/index.js",
-          "id": "./src/index.js"
-        },
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "name": "./src/index.css",
-          "id": "./src/index.css"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-      "issuerId": "./src/index.css",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "module": "./src/index.css",
-          "moduleName": "./src/index.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "resolvedModule": "./src/index.css",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!!../node_modules/css-loader/dist/cjs.js!./index.css",
-          "loc": "2:12-87",
-          "moduleId": "./src/index.css",
-          "resolvedModuleId": "./src/index.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "module": "./src/index.css",
-          "moduleName": "./src/index.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "resolvedModule": "./src/index.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!!../node_modules/css-loader/dist/cjs.js!./index.css",
-          "loc": "9:17-24",
-          "moduleId": "./src/index.css",
-          "resolvedModuleId": "./src/index.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "module": "./src/index.css",
-          "moduleName": "./src/index.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "resolvedModule": "./src/index.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!!../node_modules/css-loader/dist/cjs.js!./index.css",
-          "loc": "13:15-29",
-          "moduleId": "./src/index.css",
-          "resolvedModuleId": "./src/index.css"
-        }
-      ],
-      "usedExports": null,
-      "providedExports": [
-        "default"
-      ],
       "optimizationBailout": [],
       "depth": 2
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "size": 720072,
-      "sizes": {
-        "javascript": 720072
-      },
-      "built": true,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-      "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-      "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-      "index": 9,
-      "preOrderIndex": 9,
-      "index2": 7,
-      "postOrderIndex": 7,
-      "cacheable": true,
-      "optional": false,
-      "orphan": false,
-      "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-      "issuerName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-      "issuerPath": [
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "name": "./src/index.js",
-          "id": "./src/index.js"
-        },
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "name": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "id": "./node_modules/bootstrap/dist/css/bootstrap.css"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-      "issuerId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!!../../../css-loader/dist/cjs.js!./bootstrap.css",
-          "loc": "2:12-84",
-          "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!!../../../css-loader/dist/cjs.js!./bootstrap.css",
-          "loc": "9:17-24",
-          "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "module": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "moduleName": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModule": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "!!../../../css-loader/dist/cjs.js!./bootstrap.css",
-          "loc": "13:15-29",
-          "moduleId": "./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleId": "./node_modules/bootstrap/dist/css/bootstrap.css"
-        }
-      ],
-      "usedExports": null,
-      "providedExports": [
-        "default"
-      ],
-      "optimizationBailout": [],
-      "depth": 2
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "size": 2266,
-      "sizes": {
-        "javascript": 2266
-      },
-      "built": true,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-      "name": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-      "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-      "index": 6,
-      "preOrderIndex": 6,
-      "index2": 3,
-      "postOrderIndex": 3,
-      "cacheable": true,
-      "optional": false,
-      "orphan": false,
-      "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-      "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-      "issuerPath": [
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "name": "./src/index.js",
-          "id": "./src/index.js"
-        },
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "name": "./src/index.css",
-          "id": "./src/index.css"
-        },
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-      "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../../../css-loader/dist/runtime/cssWithMappingToString.js",
-          "loc": "2:0-111",
-          "moduleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../../../css-loader/dist/runtime/cssWithMappingToString.js",
-          "loc": "4:58-95",
-          "moduleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "loc": "2:0-118",
-          "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "loc": "4:58-95",
-          "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "module": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "moduleName": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "resolvedModule": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "type": "cjs self exports reference",
-          "active": true,
-          "explanation": "",
-          "userRequest": null,
-          "loc": "15:0-14",
-          "moduleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "resolvedModuleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js"
-        }
-      ],
-      "usedExports": null,
-      "providedExports": null,
-      "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 15:0-14"
-      ],
-      "depth": 3
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "size": 1605,
-      "sizes": {
-        "javascript": 1605
-      },
-      "built": true,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
-      "name": "./node_modules/css-loader/dist/runtime/api.js",
-      "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
-      "index": 7,
-      "preOrderIndex": 7,
-      "index2": 4,
-      "postOrderIndex": 4,
-      "cacheable": true,
-      "optional": false,
-      "orphan": false,
-      "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-      "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-      "issuerPath": [
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use[1]!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.js",
-          "name": "./src/index.js",
-          "id": "./src/index.js"
-        },
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/cache-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/loader/log-loader.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/style-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "name": "./src/index.css",
-          "id": "./src/index.css"
-        },
-        {
-          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "./node_modules/css-loader/dist/runtime/api.js",
-      "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../../../css-loader/dist/runtime/api.js",
-          "loc": "3:0-82",
-          "moduleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../../../css-loader/dist/runtime/api.js",
-          "loc": "4:30-57",
-          "moduleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css",
-          "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./node_modules/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
-          "loc": "3:0-89",
-          "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
-          "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
-          "loc": "4:30-57",
-          "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-        },
-        {
-          "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
-          "module": "./node_modules/css-loader/dist/runtime/api.js",
-          "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
-          "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
-          "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
-          "type": "cjs self exports reference",
-          "active": true,
-          "explanation": "",
-          "userRequest": null,
-          "loc": "9:0-14",
-          "moduleId": "./node_modules/css-loader/dist/runtime/api.js",
-          "resolvedModuleId": "./node_modules/css-loader/dist/runtime/api.js"
-        }
-      ],
-      "usedExports": null,
-      "providedExports": null,
-      "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 9:0-14"
-      ],
-      "depth": 3
-    },
-    {
-      "type": "module",
-      "moduleType": "runtime",
-      "size": 263,
-      "sizes": {
-        "runtime": 263
-      },
-      "built": false,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "webpack/runtime/compat get default export",
-      "name": "webpack/runtime/compat get default export",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "optional": false,
-      "orphan": false,
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [],
-      "usedExports": null,
-      "providedExports": [],
-      "optimizationBailout": [],
-      "depth": null
-    },
-    {
-      "type": "module",
-      "moduleType": "runtime",
-      "size": 308,
-      "sizes": {
-        "runtime": 308
-      },
-      "built": false,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "webpack/runtime/define property getters",
-      "name": "webpack/runtime/define property getters",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "optional": false,
-      "orphan": false,
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [],
-      "usedExports": null,
-      "providedExports": [],
-      "optimizationBailout": [],
-      "depth": null
-    },
-    {
-      "type": "module",
-      "moduleType": "runtime",
-      "size": 86,
-      "sizes": {
-        "runtime": 86
-      },
-      "built": false,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "webpack/runtime/hasOwnProperty shorthand",
-      "name": "webpack/runtime/hasOwnProperty shorthand",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "optional": false,
-      "orphan": false,
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [],
-      "usedExports": null,
-      "providedExports": [],
-      "optimizationBailout": [],
-      "depth": null
     },
     {
       "type": "module",
@@ -2422,39 +860,6 @@
       "providedExports": [],
       "optimizationBailout": [],
       "depth": null
-    },
-    {
-      "type": "module",
-      "moduleType": "runtime",
-      "size": 123,
-      "sizes": {
-        "runtime": 123
-      },
-      "built": false,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "webpack/runtime/node module decorator",
-      "name": "webpack/runtime/node module decorator",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "optional": false,
-      "orphan": false,
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [],
-      "usedExports": null,
-      "providedExports": [],
-      "optimizationBailout": [],
-      "depth": null
     }
   ],
   "entrypoints": {
@@ -2465,20 +870,24 @@
       ],
       "assets": [
         {
+          "name": "main.css",
+          "size": 15
+        },
+        {
           "name": "main.js",
-          "size": 917712
+          "size": 658
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 917712,
+      "assetsSize": 673,
       "auxiliaryAssets": [
         {
           "name": "main.js.map",
-          "size": 1160355
+          "size": 2668
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 1160355,
+      "auxiliaryAssetsSize": 2668,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -2492,20 +901,24 @@
       ],
       "assets": [
         {
+          "name": "main.css",
+          "size": 15
+        },
+        {
           "name": "main.js",
-          "size": 917712
+          "size": 658
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 917712,
+      "assetsSize": 673,
       "auxiliaryAssets": [
         {
           "name": "main.js.map",
-          "size": 1160355
+          "size": 2668
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 1160355,
+      "auxiliaryAssetsSize": 2668,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -2518,10 +931,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "a6d9379438fa2f1045d3",
+      "hash": "a0ee7cdcf0a606366d07",
       "version": "5.11.0",
-      "time": 104,
-      "builtAt": 1608471531547,
+      "time": 111,
+      "builtAt": 1608508316799,
       "publicPath": "auto",
       "outputPath": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/dist",
       "assetsByChunkName": {
@@ -2575,7 +988,7 @@
             "__child-HtmlWebpackPlugin_0"
           ],
           "auxiliaryFiles": [],
-          "hash": "2a6a154e6a17e7634293",
+          "hash": "4d7ba78a7aee0223ae9a",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_0",
           "siblings": [],
@@ -2795,6 +1208,860 @@
           ],
           "filteredAssets": 0,
           "assetsSize": null,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "errors": [],
+      "errorsCount": 0,
+      "warnings": [],
+      "warningsCount": 0,
+      "children": []
+    },
+    {
+      "name": "mini-css-extract-plugin /Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+      "hash": "21bbd45d92b64bca4ead",
+      "version": "5.11.0",
+      "time": 152,
+      "builtAt": 1608508317651,
+      "publicPath": "auto",
+      "outputPath": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/dist",
+      "assetsByChunkName": {},
+      "assets": [],
+      "chunks": [
+        {
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "recorded": false,
+          "size": 5514,
+          "sizes": {
+            "javascript": 4583,
+            "runtime": 931
+          },
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "idHints": [],
+          "runtime": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [],
+          "auxiliaryFiles": [],
+          "hash": "480565e8dd925e0aaab1",
+          "childrenByOrder": {},
+          "id": "mini-css-extract-plugin",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "modules": [
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "size": 712,
+              "sizes": {
+                "javascript": 712
+              },
+              "built": true,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "index": 0,
+              "preOrderIndex": 0,
+              "index2": 2,
+              "postOrderIndex": 2,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "issuerId": null,
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": "entry",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "!!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "loc": "mini-css-extract-plugin",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": null,
+                  "active": true,
+                  "explanation": "used as library export",
+                  "userRequest": null,
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": null,
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "size": 1605,
+              "sizes": {
+                "javascript": 1605
+              },
+              "built": true,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
+              "index": 2,
+              "preOrderIndex": 2,
+              "index2": 1,
+              "postOrderIndex": 1,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "issuerPath": [
+                {
+                  "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "./node_modules/css-loader/dist/runtime/api.js",
+              "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "3:0-89",
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+                },
+                {
+                  "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "4:30-57",
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+                },
+                {
+                  "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
+                  "module": "./node_modules/css-loader/dist/runtime/api.js",
+                  "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
+                  "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
+                  "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
+                  "type": "cjs self exports reference",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": null,
+                  "loc": "9:0-14",
+                  "moduleId": "./node_modules/css-loader/dist/runtime/api.js",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/runtime/api.js"
+                }
+              ],
+              "usedExports": null,
+              "providedExports": null,
+              "optimizationBailout": [
+                "CommonJS bailout: module.exports is used directly at 9:0-14"
+              ],
+              "depth": 1
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "size": 2266,
+              "sizes": {
+                "javascript": 2266
+              },
+              "built": true,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "name": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "index": 1,
+              "preOrderIndex": 1,
+              "index2": 0,
+              "postOrderIndex": 0,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "issuerPath": [
+                {
+                  "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "loc": "2:0-118",
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+                },
+                {
+                  "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "loc": "4:58-95",
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+                },
+                {
+                  "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "module": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "moduleName": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "resolvedModule": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "type": "cjs self exports reference",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": null,
+                  "loc": "15:0-14",
+                  "moduleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js"
+                }
+              ],
+              "usedExports": null,
+              "providedExports": null,
+              "optimizationBailout": [
+                "CommonJS bailout: module.exports is used directly at 15:0-14"
+              ],
+              "depth": 1
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "size": 263,
+              "sizes": {
+                "runtime": 263
+              },
+              "built": false,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "webpack/runtime/compat get default export",
+              "name": "webpack/runtime/compat get default export",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "size": 308,
+              "sizes": {
+                "runtime": 308
+              },
+              "built": false,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "webpack/runtime/define property getters",
+              "name": "webpack/runtime/define property getters",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "size": 86,
+              "sizes": {
+                "runtime": 86
+              },
+              "built": false,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "webpack/runtime/hasOwnProperty shorthand",
+              "name": "webpack/runtime/hasOwnProperty shorthand",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "size": 274,
+              "sizes": {
+                "runtime": 274
+              },
+              "built": false,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "webpack/runtime/make namespace object",
+              "name": "webpack/runtime/make namespace object",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            }
+          ],
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css"
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 712,
+          "sizes": {
+            "javascript": 712
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+          "issuerId": null,
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "!!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "loc": "mini-css-extract-plugin",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 2266,
+          "sizes": {
+            "javascript": 2266
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+          "name": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+          "issuerPath": [
+            {
+              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "loc": "2:0-118",
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+            },
+            {
+              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "loc": "4:58-95",
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+            },
+            {
+              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "module": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "moduleName": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "resolvedModule": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "15:0-14",
+              "moduleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "resolvedModuleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 15:0-14"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 1605,
+          "sizes": {
+            "javascript": 1605
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
+          "name": "./node_modules/css-loader/dist/runtime/api.js",
+          "nameForCondition": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+          "issuerPath": [
+            {
+              "identifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./node_modules/css-loader/dist/runtime/api.js",
+          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "3:0-89",
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+            },
+            {
+              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/cjs.js!/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/src/index.css",
+              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "4:30-57",
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
+              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
+            },
+            {
+              "moduleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
+              "module": "./node_modules/css-loader/dist/runtime/api.js",
+              "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
+              "resolvedModuleIdentifier": "/Users/dengzhifeng/frontendTraining/zhufeng_lesson/src/20201219webpack5_promotion/node_modules/css-loader/dist/runtime/api.js",
+              "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "9:0-14",
+              "moduleId": "./node_modules/css-loader/dist/runtime/api.js",
+              "resolvedModuleId": "./node_modules/css-loader/dist/runtime/api.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 9:0-14"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 263,
+          "sizes": {
+            "runtime": 263
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/compat get default export",
+          "name": "webpack/runtime/compat get default export",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 86,
+          "sizes": {
+            "runtime": 86
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "name": "mini-css-extract-plugin",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "name": "mini-css-extract-plugin",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
           "auxiliaryAssets": [],
           "filteredAuxiliaryAssets": 0,
           "auxiliaryAssetsSize": 0,

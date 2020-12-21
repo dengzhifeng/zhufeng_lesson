@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-19 06:40:54
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-21 07:03:08
+ * @LastEditTime: 2020-12-21 08:40:50
 -->
 
 ## 1.安装依赖包
@@ -127,3 +127,9 @@ cnpm i terser-webpack-plugin optimize-css-assets-webpack-plugin image-webpack-lo
 ```
 cnpm i purgecss-webpack-plugin mini-css-extract-plugin -D
 ```
+
+## 5. 环境
+
+### 4.1 mode 的默认值
+
+-   webpack

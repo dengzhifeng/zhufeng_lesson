@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-19 06:51:55
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-21 07:51:07
+ * @LastEditTime: 2020-12-21 08:34:39
  */
 const path = require('path');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
@@ -131,7 +131,8 @@ module.exports = smw.wrap({
         new MiniCssExtractPlugin({
             filename: '[name].css'
         }),
-        // /**/*   **匹配任意字段 包括路径分隔符  *匹配任意字符 不包含路径分隔符
+        // /**/*   **匹配任意字段 包括路径分隔符  *匹配任意字符 不包含路径分隔符 、、
+        // 去除无用css
         new PurgecssWebpackPlugin({
             paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
         }),

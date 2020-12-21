@@ -1,0 +1,3 @@
+/*! For license information please see main.js.LICENSE.txt */
+(()=>{var e={"./src/index.css":(e,r,t)=>{"use strict";t.r(r)},"./src/index.js":(e,r,t)=>{"use strict";t.r(r);t("./src/index.css");let s=t("./src/title.js");t("jquery");console.log(s)},"./src/title.js":e=>{e.exports=1111},jquery:e=>{"use strict";e.exports=jQuery}},r={};function t(s){if(r[s])return r[s].exports;var o=r[s]={exports:{}};return e[s](o,o.exports,t),o.exports}t.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t("./src/index.js")})();
+//# sourceMappingURL=main.js.map

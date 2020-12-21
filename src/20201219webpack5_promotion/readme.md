@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-19 06:40:54
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-21 08:40:50
+ * @LastEditTime: 2020-12-21 11:48:57
 -->
 
 ## 1.安装依赖包
@@ -132,4 +132,24 @@ cnpm i purgecss-webpack-plugin mini-css-extract-plugin -D
 
 ### 4.1 mode 的默认值
 
--   webpack
+-   webpack 的 mode 默认 production
+-   webpack serve 的 mode 默认为 development
+-   可以在模块内通过 process.env.NODE_ENV 获取当前环境变量 无法在 webpack 配置文件中获取此变量
+
+### 4.2 修改
+
+-   命令行加--mode=production 可以赋值 可以覆盖掉配置文件 优先级 默认 mode <config < --mode 配置
+
+### 4.3 DefinePlugin
+
+-   设置全局变量 所有模块都能读取该变量的值
+-   可以在任意模块内通过 process.env.NODE_ENV 获取当前的环境变量
+-   但无法在 node 环境（webpack 配置文件中）下获取当前的环境变量
+
+```
+ // 定义全局变量 修改process.env.NODE_ENV
+new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify('production'),
+    ENV: JSON.stringify('ENV')
+})
+```

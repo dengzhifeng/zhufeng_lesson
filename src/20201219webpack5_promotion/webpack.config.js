@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-19 06:51:55
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-21 08:34:39
+ * @LastEditTime: 2020-12-21 15:57:11
  */
 const path = require('path');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
@@ -22,6 +22,7 @@ const PurgecssWebpackPlugin = require('purgecss-webpack-plugin');
 // 因为css和js加载可以并行 所以我们可以通过此插件提取css为单独的文件 然后去掉无用css 进行压缩
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const glob = require('glob');
+const { DefinePlugin } = require('webpack');
 const PATHS = {
     src: path.resolve(__dirname, 'src')
 };
@@ -29,8 +30,14 @@ const bootstrap = path.resolve(
     __dirname,
     'node_modules/bootstrap/dist/css/bootstrap.css'
 );
+// 可以读取.env文件， 获取里面的值 设置到process.env.NODE_ENV里面
+require('dotenv').config();
+console.log('.env process.env.NODE_ENV', process.env.NODE_ENV);
+console.log('.env ENV', process.env.ENV);
+// 默认值undefined 无法在配置文件中获取   在模块代码内可以获取
+console.log('process.env.NODE_ENV', process.env.NODE_ENV);
 module.exports = smw.wrap({
-    mode: 'development', // 配置的模式
+    // mode: 'development', // 配置的模式
     devtool: 'source-map', // 调试工具
     context: process.cwd(), // node命令运行的进程的当前目录 就是这个项目根目录
     entry: {
@@ -155,6 +162,13 @@ module.exports = smw.wrap({
         new webpack.IgnorePlugin({
             resourceRegExp: /^\.\/locale$/, // 资源正则
             contextRegExp: /moment$/ // 上下文， 目录正则
+        }),
+        // 定义全局变量
+        new webpack.DefinePlugin({
+            // 定义在编译使用的全局变量 在浏览器运行阶段时就是值了
+            // 'process.env.NODE_ENV': JSON.stringify('production'),
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+            ENV: JSON.stringify('ENV')
         }),
         new OptimizeCssAssetsWebpackPlugin() // 压缩css
     ]

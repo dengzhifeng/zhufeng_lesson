@@ -1,5 +1,12 @@
+/*
+ * @description:
+ * @author: steve.deng
+ * @Date: 2020-12-22 06:43:01
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-12-22 07:13:11
+ */
 import Vue from 'vue';
-import VueRouter from 'vue-router';
+import VueRouter from '@/vue-router';
 import Home from '../views/Home.vue';
 
 // Vue.use = function(plugin, options) {
@@ -22,7 +29,28 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () =>
-            import(/* webpackChunkName: "about" */ '../views/About.vue')
+            import(/* webpackChunkName: "about" */ '../views/About.vue'),
+        children: [
+            // /about/a      /about/b
+            {
+                path: 'a',
+                component: {
+                    // runtime-only /render方法
+                    render(h) {
+                        return <h1>hello a</h1>;
+                    }
+                }
+            },
+            {
+                path: 'b',
+                component: {
+                    // runtime-only /render方法
+                    render(h) {
+                        return <h1>hello b</h1>;
+                    }
+                }
+            }
+        ]
     }
 ];
 // vueRouter是一个构造函数 前端路由实现 hash模式 history模式

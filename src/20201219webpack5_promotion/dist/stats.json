@@ -1,13 +1,12 @@
 {
-  "hash": "f10f0c021cf080d01440",
+  "hash": "587e3552fb3f5fae25f7",
   "version": "5.11.0",
-  "time": 4422,
-  "builtAt": 1608541251339,
+  "time": 1462,
+  "builtAt": 1608619146238,
   "publicPath": "auto",
   "outputPath": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\dist",
   "assetsByChunkName": {
     "main": [
-      "main.css",
       "main.js"
     ]
   },
@@ -89,12 +88,12 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 406,
-      "emitted": false,
-      "comparedForEmit": true,
+      "size": 385,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 406
+        "size": 385
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -102,29 +101,6 @@
       "auxiliaryChunkIdHints": [],
       "related": {},
       "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
-      "name": "main.css",
-      "size": 15,
-      "emitted": false,
-      "comparedForEmit": true,
-      "cached": false,
-      "info": {
-        "size": 15
-      },
-      "chunkNames": [
-        "main"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [
-        "main"
-      ],
       "auxiliaryChunks": [],
       "isOverSizeLimit": false
     }
@@ -135,10 +111,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 1062,
+      "size": 1000,
       "sizes": {
         "javascript": 726,
-        "css/mini-extract": 62,
         "runtime": 274
       },
       "names": [
@@ -149,13 +124,12 @@
         "main"
       ],
       "files": [
-        "main.css",
         "main.js"
       ],
       "auxiliaryFiles": [
         "main.js.map"
       ],
-      "hash": "5c189ac44c4250990791",
+      "hash": "4bc5ae021d30c8bb5bd8",
       "childrenByOrder": {},
       "id": "main",
       "siblings": [],
@@ -177,8 +151,8 @@
           "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
           "index": 3,
           "preOrderIndex": 3,
-          "index2": 3,
-          "postOrderIndex": 3,
+          "index2": 2,
+          "postOrderIndex": 2,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -237,8 +211,8 @@
           "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.js",
           "index": 0,
           "preOrderIndex": 0,
-          "index2": 4,
-          "postOrderIndex": 4,
+          "index2": 3,
+          "postOrderIndex": 3,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -351,69 +325,6 @@
             "CommonJS bailout: module.exports is used directly at 8:0-14"
           ],
           "depth": 1
-        },
-        {
-          "type": "module",
-          "moduleType": "css/mini-extract",
-          "size": 62,
-          "sizes": {
-            "css/mini-extract": 62
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "css F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css 0",
-          "name": "css ./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-          "index": 4,
-          "preOrderIndex": 4,
-          "index2": 2,
-          "postOrderIndex": 2,
-          "optional": false,
-          "orphan": false,
-          "dependent": true,
-          "issuer": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\cache-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\loader\\log-loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-          "issuerName": "./src/index.css",
-          "issuerPath": [
-            {
-              "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\thread-loader\\dist\\cjs.js??ruleSet[1].rules[0].use[0]!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use[1]!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.js",
-              "name": "./src/index.js",
-              "id": "./src/index.js"
-            },
-            {
-              "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\cache-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\loader\\log-loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "name": "./src/index.css",
-              "id": "./src/index.css"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": null,
-          "issuerId": "./src/index.css",
-          "chunks": [
-            "main"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\cache-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\loader\\log-loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "module": "./src/index.css",
-              "moduleName": "./src/index.css",
-              "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\cache-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\loader\\log-loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "resolvedModule": "./src/index.css",
-              "type": "unknown",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "moduleId": "./src/index.css",
-              "resolvedModuleId": "./src/index.css"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": null,
-          "optimizationBailout": [],
-          "depth": 2
         },
         {
           "type": "module",
@@ -536,8 +447,8 @@
       "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.js",
       "index": 0,
       "preOrderIndex": 0,
-      "index2": 4,
-      "postOrderIndex": 4,
+      "index2": 3,
+      "postOrderIndex": 3,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -722,8 +633,8 @@
       "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
       "index": 3,
       "preOrderIndex": 3,
-      "index2": 3,
-      "postOrderIndex": 3,
+      "index2": 2,
+      "postOrderIndex": 2,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -768,68 +679,6 @@
     },
     {
       "type": "module",
-      "moduleType": "css/mini-extract",
-      "size": 62,
-      "sizes": {
-        "css/mini-extract": 62
-      },
-      "built": false,
-      "codeGenerated": true,
-      "cached": false,
-      "identifier": "css F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css 0",
-      "name": "css ./node_modules/css-loader/dist/cjs.js!./src/index.css",
-      "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-      "index": 4,
-      "preOrderIndex": 4,
-      "index2": 2,
-      "postOrderIndex": 2,
-      "optional": false,
-      "orphan": false,
-      "issuer": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\cache-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\loader\\log-loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-      "issuerName": "./src/index.css",
-      "issuerPath": [
-        {
-          "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\thread-loader\\dist\\cjs.js??ruleSet[1].rules[0].use[0]!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use[1]!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.js",
-          "name": "./src/index.js",
-          "id": "./src/index.js"
-        },
-        {
-          "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\cache-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\loader\\log-loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-          "name": "./src/index.css",
-          "id": "./src/index.css"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "issuerId": "./src/index.css",
-      "chunks": [
-        "main"
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\cache-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\loader\\log-loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-          "module": "./src/index.css",
-          "moduleName": "./src/index.css",
-          "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\cache-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\loader\\log-loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-          "resolvedModule": "./src/index.css",
-          "type": "unknown",
-          "active": true,
-          "explanation": "",
-          "userRequest": null,
-          "moduleId": "./src/index.css",
-          "resolvedModuleId": "./src/index.css"
-        }
-      ],
-      "usedExports": null,
-      "providedExports": null,
-      "optimizationBailout": [],
-      "depth": 2
-    },
-    {
-      "type": "module",
       "moduleType": "runtime",
       "size": 274,
       "sizes": {
@@ -870,16 +719,12 @@
       ],
       "assets": [
         {
-          "name": "main.css",
-          "size": 15
-        },
-        {
           "name": "main.js",
           "size": 808
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 823,
+      "assetsSize": 808,
       "auxiliaryAssets": [
         {
           "name": "main.js.map",
@@ -901,16 +746,12 @@
       ],
       "assets": [
         {
-          "name": "main.css",
-          "size": 15
-        },
-        {
           "name": "main.js",
           "size": 808
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 823,
+      "assetsSize": 808,
       "auxiliaryAssets": [
         {
           "name": "main.js.map",
@@ -931,10 +772,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "26289f0b2b2db9508873",
+      "hash": "7372727e40e0c7f1868e",
       "version": "5.11.0",
-      "time": 190,
-      "builtAt": 1608541247143,
+      "time": 97,
+      "builtAt": 1608619144909,
       "publicPath": "auto",
       "outputPath": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\dist",
       "assetsByChunkName": {
@@ -946,7 +787,7 @@
         {
           "type": "asset",
           "name": "__child-HtmlWebpackPlugin_0",
-          "size": 2666,
+          "size": 2696,
           "emitted": false,
           "comparedForEmit": false,
           "cached": true,
@@ -973,9 +814,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 921,
+          "size": 951,
           "sizes": {
-            "javascript": 921
+            "javascript": 951
           },
           "names": [
             "HtmlWebpackPlugin_0"
@@ -988,7 +829,7 @@
             "__child-HtmlWebpackPlugin_0"
           ],
           "auxiliaryFiles": [],
-          "hash": "5d1208576c55225ddcec",
+          "hash": "13c76af6e257bf415f9e",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_0",
           "siblings": [],
@@ -998,9 +839,9 @@
             {
               "type": "module",
               "moduleType": "javascript/auto",
-              "size": 921,
+              "size": 951,
               "sizes": {
-                "javascript": 921
+                "javascript": 951
               },
               "built": true,
               "codeGenerated": true,
@@ -1094,9 +935,9 @@
         {
           "type": "module",
           "moduleType": "javascript/auto",
-          "size": 921,
+          "size": 951,
           "sizes": {
-            "javascript": 921
+            "javascript": 951
           },
           "built": true,
           "codeGenerated": true,
@@ -1208,860 +1049,6 @@
           ],
           "filteredAssets": 0,
           "assetsSize": null,
-          "auxiliaryAssets": [],
-          "filteredAuxiliaryAssets": 0,
-          "auxiliaryAssetsSize": 0,
-          "children": {},
-          "childAssets": {},
-          "isOverSizeLimit": false
-        }
-      },
-      "errors": [],
-      "errorsCount": 0,
-      "warnings": [],
-      "warningsCount": 0,
-      "children": []
-    },
-    {
-      "name": "mini-css-extract-plugin F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-      "hash": "ef550a199f82ef12dd20",
-      "version": "5.11.0",
-      "time": 311,
-      "builtAt": 1608541249228,
-      "publicPath": "auto",
-      "outputPath": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\dist",
-      "assetsByChunkName": {},
-      "assets": [],
-      "chunks": [
-        {
-          "rendered": true,
-          "initial": true,
-          "entry": true,
-          "recorded": false,
-          "size": 5542,
-          "sizes": {
-            "javascript": 4611,
-            "runtime": 931
-          },
-          "names": [
-            "mini-css-extract-plugin"
-          ],
-          "idHints": [],
-          "runtime": [
-            "mini-css-extract-plugin"
-          ],
-          "files": [],
-          "auxiliaryFiles": [],
-          "hash": "53507db4bd779cb1a811",
-          "childrenByOrder": {},
-          "id": "mini-css-extract-plugin",
-          "siblings": [],
-          "parents": [],
-          "children": [],
-          "modules": [
-            {
-              "type": "module",
-              "moduleType": "javascript/auto",
-              "size": 740,
-              "sizes": {
-                "javascript": 740
-              },
-              "built": true,
-              "codeGenerated": true,
-              "cached": false,
-              "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "index": 0,
-              "preOrderIndex": 0,
-              "index2": 2,
-              "postOrderIndex": 2,
-              "cacheable": true,
-              "optional": false,
-              "orphan": false,
-              "dependent": false,
-              "issuer": null,
-              "issuerName": null,
-              "issuerPath": null,
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "issuerId": null,
-              "chunks": [
-                "mini-css-extract-plugin"
-              ],
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleIdentifier": null,
-                  "module": null,
-                  "moduleName": null,
-                  "resolvedModuleIdentifier": null,
-                  "resolvedModule": null,
-                  "type": "entry",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "!!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "loc": "mini-css-extract-plugin",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": null,
-                  "module": null,
-                  "moduleName": null,
-                  "resolvedModuleIdentifier": null,
-                  "resolvedModule": null,
-                  "type": null,
-                  "active": true,
-                  "explanation": "used as library export",
-                  "userRequest": null,
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                }
-              ],
-              "usedExports": null,
-              "providedExports": [
-                "default"
-              ],
-              "optimizationBailout": [],
-              "depth": 0
-            },
-            {
-              "type": "module",
-              "moduleType": "javascript/auto",
-              "size": 1605,
-              "sizes": {
-                "javascript": 1605
-              },
-              "built": true,
-              "codeGenerated": true,
-              "cached": false,
-              "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\api.js",
-              "name": "./node_modules/css-loader/dist/runtime/api.js",
-              "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\api.js",
-              "index": 2,
-              "preOrderIndex": 2,
-              "index2": 1,
-              "postOrderIndex": 1,
-              "cacheable": true,
-              "optional": false,
-              "orphan": false,
-              "dependent": true,
-              "issuer": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "issuerPath": [
-                {
-                  "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "id": "./node_modules/css-loader/dist/runtime/api.js",
-              "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "chunks": [
-                "mini-css-extract-plugin"
-              ],
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "type": "harmony side effect evaluation",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
-                  "loc": "3:0-89",
-                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-                },
-                {
-                  "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
-                  "loc": "4:30-57",
-                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-                },
-                {
-                  "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\api.js",
-                  "module": "./node_modules/css-loader/dist/runtime/api.js",
-                  "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
-                  "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\api.js",
-                  "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
-                  "type": "cjs self exports reference",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": null,
-                  "loc": "9:0-14",
-                  "moduleId": "./node_modules/css-loader/dist/runtime/api.js",
-                  "resolvedModuleId": "./node_modules/css-loader/dist/runtime/api.js"
-                }
-              ],
-              "usedExports": null,
-              "providedExports": null,
-              "optimizationBailout": [
-                "CommonJS bailout: module.exports is used directly at 9:0-14"
-              ],
-              "depth": 1
-            },
-            {
-              "type": "module",
-              "moduleType": "javascript/auto",
-              "size": 2266,
-              "sizes": {
-                "javascript": 2266
-              },
-              "built": true,
-              "codeGenerated": true,
-              "cached": false,
-              "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
-              "name": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
-              "index": 1,
-              "preOrderIndex": 1,
-              "index2": 0,
-              "postOrderIndex": 0,
-              "cacheable": true,
-              "optional": false,
-              "orphan": false,
-              "dependent": true,
-              "issuer": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "issuerPath": [
-                {
-                  "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "id": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "chunks": [
-                "mini-css-extract-plugin"
-              ],
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "type": "harmony side effect evaluation",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-                  "loc": "2:0-118",
-                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-                },
-                {
-                  "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-                  "loc": "4:58-95",
-                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-                },
-                {
-                  "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
-                  "module": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-                  "moduleName": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-                  "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
-                  "resolvedModule": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-                  "type": "cjs self exports reference",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": null,
-                  "loc": "15:0-14",
-                  "moduleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-                  "resolvedModuleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js"
-                }
-              ],
-              "usedExports": null,
-              "providedExports": null,
-              "optimizationBailout": [
-                "CommonJS bailout: module.exports is used directly at 15:0-14"
-              ],
-              "depth": 1
-            },
-            {
-              "type": "module",
-              "moduleType": "runtime",
-              "size": 263,
-              "sizes": {
-                "runtime": 263
-              },
-              "built": false,
-              "codeGenerated": true,
-              "cached": false,
-              "identifier": "webpack/runtime/compat get default export",
-              "name": "webpack/runtime/compat get default export",
-              "nameForCondition": null,
-              "index": null,
-              "preOrderIndex": null,
-              "index2": null,
-              "postOrderIndex": null,
-              "optional": false,
-              "orphan": false,
-              "dependent": false,
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "id": "",
-              "chunks": [
-                "mini-css-extract-plugin"
-              ],
-              "assets": [],
-              "reasons": [],
-              "usedExports": null,
-              "providedExports": [],
-              "optimizationBailout": [],
-              "depth": null
-            },
-            {
-              "type": "module",
-              "moduleType": "runtime",
-              "size": 308,
-              "sizes": {
-                "runtime": 308
-              },
-              "built": false,
-              "codeGenerated": true,
-              "cached": false,
-              "identifier": "webpack/runtime/define property getters",
-              "name": "webpack/runtime/define property getters",
-              "nameForCondition": null,
-              "index": null,
-              "preOrderIndex": null,
-              "index2": null,
-              "postOrderIndex": null,
-              "optional": false,
-              "orphan": false,
-              "dependent": false,
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "id": "",
-              "chunks": [
-                "mini-css-extract-plugin"
-              ],
-              "assets": [],
-              "reasons": [],
-              "usedExports": null,
-              "providedExports": [],
-              "optimizationBailout": [],
-              "depth": null
-            },
-            {
-              "type": "module",
-              "moduleType": "runtime",
-              "size": 86,
-              "sizes": {
-                "runtime": 86
-              },
-              "built": false,
-              "codeGenerated": true,
-              "cached": false,
-              "identifier": "webpack/runtime/hasOwnProperty shorthand",
-              "name": "webpack/runtime/hasOwnProperty shorthand",
-              "nameForCondition": null,
-              "index": null,
-              "preOrderIndex": null,
-              "index2": null,
-              "postOrderIndex": null,
-              "optional": false,
-              "orphan": false,
-              "dependent": false,
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "id": "",
-              "chunks": [
-                "mini-css-extract-plugin"
-              ],
-              "assets": [],
-              "reasons": [],
-              "usedExports": null,
-              "providedExports": [],
-              "optimizationBailout": [],
-              "depth": null
-            },
-            {
-              "type": "module",
-              "moduleType": "runtime",
-              "size": 274,
-              "sizes": {
-                "runtime": 274
-              },
-              "built": false,
-              "codeGenerated": true,
-              "cached": false,
-              "identifier": "webpack/runtime/make namespace object",
-              "name": "webpack/runtime/make namespace object",
-              "nameForCondition": null,
-              "index": null,
-              "preOrderIndex": null,
-              "index2": null,
-              "postOrderIndex": null,
-              "optional": false,
-              "orphan": false,
-              "dependent": false,
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "id": "",
-              "chunks": [
-                "mini-css-extract-plugin"
-              ],
-              "assets": [],
-              "reasons": [],
-              "usedExports": null,
-              "providedExports": [],
-              "optimizationBailout": [],
-              "depth": null
-            }
-          ],
-          "origins": [
-            {
-              "module": "",
-              "moduleIdentifier": "",
-              "moduleName": "",
-              "loc": "mini-css-extract-plugin",
-              "request": "!!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css"
-            }
-          ]
-        }
-      ],
-      "modules": [
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 740,
-          "sizes": {
-            "javascript": 740
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-          "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-          "index": 0,
-          "preOrderIndex": 0,
-          "index2": 2,
-          "postOrderIndex": 2,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "issuer": null,
-          "issuerName": null,
-          "issuerPath": null,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "issuerId": null,
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": null,
-              "module": null,
-              "moduleName": null,
-              "resolvedModuleIdentifier": null,
-              "resolvedModule": null,
-              "type": "entry",
-              "active": true,
-              "explanation": "",
-              "userRequest": "!!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "loc": "mini-css-extract-plugin",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": null,
-              "module": null,
-              "moduleName": null,
-              "resolvedModuleIdentifier": null,
-              "resolvedModule": null,
-              "type": null,
-              "active": true,
-              "explanation": "used as library export",
-              "userRequest": null,
-              "moduleId": null,
-              "resolvedModuleId": null
-            }
-          ],
-          "usedExports": null,
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 0
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 2266,
-          "sizes": {
-            "javascript": 2266
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
-          "name": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
-          "index": 1,
-          "preOrderIndex": 1,
-          "index2": 0,
-          "postOrderIndex": 0,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "issuer": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "issuerPath": [
-            {
-              "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "loc": "2:0-118",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            },
-            {
-              "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "loc": "4:58-95",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            },
-            {
-              "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
-              "module": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "moduleName": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
-              "resolvedModule": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "type": "cjs self exports reference",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "loc": "15:0-14",
-              "moduleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
-              "resolvedModuleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": null,
-          "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 15:0-14"
-          ],
-          "depth": 1
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "size": 1605,
-          "sizes": {
-            "javascript": 1605
-          },
-          "built": true,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\api.js",
-          "name": "./node_modules/css-loader/dist/runtime/api.js",
-          "nameForCondition": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\api.js",
-          "index": 2,
-          "preOrderIndex": 2,
-          "index2": 1,
-          "postOrderIndex": 1,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "issuer": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "issuerPath": [
-            {
-              "identifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "name": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "id": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "./node_modules/css-loader/dist/runtime/api.js",
-          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
-              "loc": "3:0-89",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            },
-            {
-              "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\cjs.js!F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\src\\index.css",
-              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../node_modules/css-loader/dist/runtime/api.js",
-              "loc": "4:30-57",
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css",
-              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/index.css"
-            },
-            {
-              "moduleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\api.js",
-              "module": "./node_modules/css-loader/dist/runtime/api.js",
-              "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
-              "resolvedModuleIdentifier": "F:\\git\\zhufeng_lesson\\src\\20201219webpack5_promotion\\node_modules\\css-loader\\dist\\runtime\\api.js",
-              "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
-              "type": "cjs self exports reference",
-              "active": true,
-              "explanation": "",
-              "userRequest": null,
-              "loc": "9:0-14",
-              "moduleId": "./node_modules/css-loader/dist/runtime/api.js",
-              "resolvedModuleId": "./node_modules/css-loader/dist/runtime/api.js"
-            }
-          ],
-          "usedExports": null,
-          "providedExports": null,
-          "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 9:0-14"
-          ],
-          "depth": 1
-        },
-        {
-          "type": "module",
-          "moduleType": "runtime",
-          "size": 263,
-          "sizes": {
-            "runtime": 263
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "webpack/runtime/compat get default export",
-          "name": "webpack/runtime/compat get default export",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
-          "optional": false,
-          "orphan": false,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "",
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [],
-          "reasons": [],
-          "usedExports": null,
-          "providedExports": [],
-          "optimizationBailout": [],
-          "depth": null
-        },
-        {
-          "type": "module",
-          "moduleType": "runtime",
-          "size": 308,
-          "sizes": {
-            "runtime": 308
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "webpack/runtime/define property getters",
-          "name": "webpack/runtime/define property getters",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
-          "optional": false,
-          "orphan": false,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "",
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [],
-          "reasons": [],
-          "usedExports": null,
-          "providedExports": [],
-          "optimizationBailout": [],
-          "depth": null
-        },
-        {
-          "type": "module",
-          "moduleType": "runtime",
-          "size": 86,
-          "sizes": {
-            "runtime": 86
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "webpack/runtime/hasOwnProperty shorthand",
-          "name": "webpack/runtime/hasOwnProperty shorthand",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
-          "optional": false,
-          "orphan": false,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "",
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [],
-          "reasons": [],
-          "usedExports": null,
-          "providedExports": [],
-          "optimizationBailout": [],
-          "depth": null
-        },
-        {
-          "type": "module",
-          "moduleType": "runtime",
-          "size": 274,
-          "sizes": {
-            "runtime": 274
-          },
-          "built": false,
-          "codeGenerated": true,
-          "cached": false,
-          "identifier": "webpack/runtime/make namespace object",
-          "name": "webpack/runtime/make namespace object",
-          "nameForCondition": null,
-          "index": null,
-          "preOrderIndex": null,
-          "index2": null,
-          "postOrderIndex": null,
-          "optional": false,
-          "orphan": false,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": "",
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [],
-          "reasons": [],
-          "usedExports": null,
-          "providedExports": [],
-          "optimizationBailout": [],
-          "depth": null
-        }
-      ],
-      "entrypoints": {
-        "mini-css-extract-plugin": {
-          "name": "mini-css-extract-plugin",
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [],
-          "filteredAssets": 0,
-          "assetsSize": 0,
-          "auxiliaryAssets": [],
-          "filteredAuxiliaryAssets": 0,
-          "auxiliaryAssetsSize": 0,
-          "children": {},
-          "childAssets": {},
-          "isOverSizeLimit": false
-        }
-      },
-      "namedChunkGroups": {
-        "mini-css-extract-plugin": {
-          "name": "mini-css-extract-plugin",
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [],
-          "filteredAssets": 0,
-          "assetsSize": 0,
           "auxiliaryAssets": [],
           "filteredAuxiliaryAssets": 0,
           "auxiliaryAssetsSize": 0,

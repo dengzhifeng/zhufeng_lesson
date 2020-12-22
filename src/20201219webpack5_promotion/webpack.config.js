@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-19 06:51:55
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-21 15:57:11
+ * @LastEditTime: 2020-12-22 14:38:50
  */
 const path = require('path');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');

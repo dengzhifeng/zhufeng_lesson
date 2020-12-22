@@ -1,0 +1,14 @@
+/*
+ * @description:
+ * @author: steve.deng
+ * @Date: 2020-12-22 17:47:40
+ * @LastEditors: steve.deng
+ * @LastEditTime: 2020-12-22 17:54:11
+ */
+import History from './base';
+
+export default class BrowserHistory extends History {
+    constructor(router) {
+        super(router);
+    }
+}

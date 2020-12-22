@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-22 06:43:01
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-22 07:13:11
+ * @LastEditTime: 2020-12-22 17:56:02
  */
 import Vue from 'vue';
 import VueRouter from '@/vue-router';
@@ -59,7 +59,7 @@ const routes = [
 // history 漂亮像正常路径一样 但需服务端支持  history-fallback
 // window.history.pushState()    监听 window.addEventListener('popstate')
 const router = new VueRouter({
-    mode: 'history',
+    mode: 'hash',
     base: process.env.BASE_URL,
     routes
 });

@@ -5,7 +5,7 @@ import History from './base';
  * @author: steve.deng
  * @Date: 2020-12-22 17:47:33
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-22 18:13:10
+ * @LastEditTime: 2020-12-23 06:46:07
  */
 
 function ensureSlash() {
@@ -25,7 +25,7 @@ export default class HashHistory extends History {
         ensureSlash();
     }
     setupListener() {
-        // 监听
+        // 监听 hash性能不如popstate好用 popstate 也可以监听浏览器历史记录的变化 源码有写
         window.addEventListener('hashchange', () => {
             // 根据当前hash值 去匹配对应的组件
             // todo...

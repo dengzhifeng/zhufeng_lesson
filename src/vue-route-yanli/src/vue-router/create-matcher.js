@@ -3,9 +3,10 @@
  * @author: steve.deng
  * @Date: 2020-12-22 15:56:37
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-22 16:26:19
+ * @LastEditTime: 2020-12-23 07:17:27
  */
 import { createRouteMap } from './create-route-map';
+import { createRoute } from './history/base';
 export function createMatcher(routes) {
     // {/:home, /about: about}
     let { pathMap } = createRouteMap(routes); // 根据用户的配置创建一个映射表
@@ -15,7 +16,13 @@ export function createMatcher(routes) {
         createRouteMap(routes, pathMap);
     }
     function match(path) {
-        // 给我个路径 可以匹配路由
+        let record = pathMap[path];
+        console.log(record);
+
+        return createRoute(record, {
+            // {path: / , matched: [{},{}]}
+            path
+        });
     }
     return {
         addRoutes,

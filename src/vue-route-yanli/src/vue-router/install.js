@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-22 07:19:31
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-22 15:43:03
+ * @LastEditTime: 2020-12-23 08:37:33
  */
 
 export let _Vue;
@@ -22,15 +22,21 @@ export function install(Vue, options) {
             console.log(this.$options);
             // 共用顶层this
             if (this.$options.router) {
-                this._rooterRoot = this; // 把根实例挂载到_rooterRoot上
+                this._routerRoot = this; // 把根实例挂载到_routerRoot上
                 this._router = this.$options.router;
-                console.log('根');
-                console.log(this._router.init);
-                // this._router 路由实例
                 this._router.init(this);
+                // 响应式数据
+                Vue.util.defineReactive(
+                    this,
+                    '_route',
+                    this._router.history.current
+                );
+
+                console.log(this._route);
+                // this._router 路由实例
             } else {
-                // this._rooterRoot 指向当前根组件实例
-                this._rooterRoot = this.$parent && this.$parent._rooterRoot;
+                // this._routerRoot 指向当前根组件实例
+                this._routerRoot = this.$parent && this.$parent._routerRoot;
                 console.log('孙子');
             }
             // 根 -》 父亲- > 儿子 -》 孙子

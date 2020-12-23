@@ -5,7 +5,7 @@ import router from '../router';
  * @author: steve.deng
  * @Date: 2020-12-22 16:14:14
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-22 17:41:04
+ * @LastEditTime: 2020-12-23 07:38:06
  */
 export function createRouteMap(routes, oldPathMap) {
     // 一个参数时 初始化  2个参数就是动态添加路由
@@ -25,7 +25,7 @@ function addRouteRecord(route, pathMap, parent) {
     let path = parent ? parent.path + '/' + route.path : route.path;
     let record = {
         parent, // 指代父亲记录
-        path: route.path,
+        path: path,
         component: route.component,
         name: route.props,
         params: route.params || {},

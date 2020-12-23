@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-22 07:03:02
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-22 18:11:46
+ * @LastEditTime: 2020-12-23 07:06:10
  */
 import { install } from './install';
 import { createMatcher } from './create-matcher';
@@ -30,6 +30,9 @@ export default class VueRouter {
                 break;
             }
         }
+    }
+    match(location) {
+        return this.matcher.match(location);
     }
     init(app) {
         // app根实例

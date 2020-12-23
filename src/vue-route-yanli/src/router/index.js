@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-22 06:43:01
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-22 17:56:02
+ * @LastEditTime: 2020-12-23 17:08:37
  */
 import Vue from 'vue';
 import VueRouter from '@/vue-router';
@@ -59,9 +59,17 @@ const routes = [
 // history 漂亮像正常路径一样 但需服务端支持  history-fallback
 // window.history.pushState()    监听 window.addEventListener('popstate')
 const router = new VueRouter({
-    mode: 'hash',
+    mode: 'history',
     base: process.env.BASE_URL,
     routes
 });
+router.beforeEach((to, from, next) => {
+    // 类似express koa中间件
+    setTimeout(() => {
+        console.log(1);
+        next();
+    }, 1000);
+});
 
+// [fn1, fn2] => 渲染逻辑
 export default router;

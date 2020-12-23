@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-22 07:03:02
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-23 07:06:10
+ * @LastEditTime: 2020-12-23 17:13:00
  */
 import { install } from './install';
 import { createMatcher } from './create-matcher';
@@ -17,8 +17,7 @@ export default class VueRouter {
         // 创建匹配器后，核心的方法就是匹配
         // match addRoutes
         this.matcher = createMatcher(options.routes || []);
-        console.log(this.matcher);
-
+        this.beforeEachHooks = [];
         // 根据当前的mode 创建不同的history管理策略
         switch (options.mode) {
             case 'hash': {
@@ -34,6 +33,9 @@ export default class VueRouter {
     match(location) {
         return this.matcher.match(location);
     }
+    push(location) {
+        this.history.push(location);
+    }
     init(app) {
         // app根实例
         // 路由初始化
@@ -45,6 +47,13 @@ export default class VueRouter {
             history.setupListener(); // 监听hash变化
         };
         history.transitionTo(history.getCurrentLocation(), setupHashListener); // 跳转到哪里
+        history.listen(route => {
+            app._route = route;
+        });
+    }
+    beforeEach(fn) {
+        console.log(fn);
+        this.beforeEachHooks.push(fn);
     }
 }
 

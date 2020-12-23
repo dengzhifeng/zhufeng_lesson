@@ -5,7 +5,7 @@ import History from './base';
  * @author: steve.deng
  * @Date: 2020-12-22 17:47:33
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-23 06:46:07
+ * @LastEditTime: 2020-12-23 16:41:26
  */
 
 function ensureSlash() {
@@ -34,6 +34,11 @@ export default class HashHistory extends History {
     }
     getCurrentLocation() {
         return getHash();
+    }
+    //
+    push(location) {
+        window.location.hash = location;
+        // this.transitionTo(location); // 可以去匹配视图
     }
     // hash模式的核心功能是 监听hash值的变化 window.addEventListener('hashchange')
 }

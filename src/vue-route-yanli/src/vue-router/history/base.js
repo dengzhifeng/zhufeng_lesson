@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-22 17:48:02
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-23 18:11:14
+ * @LastEditTime: 2020-12-25 14:50:29
  */
 export function createRoute(record, location) {
     let res = [];
@@ -50,11 +50,11 @@ export default class History {
 
         // 根据跳转的路径 获取匹配记录
         let route = this.router.match(location); // route = {path: '/about/a', matched: [{},{}]}
+        console.log('this.router.match', route);
         let queue = [].concat(this.router.beforeEachHooks);
         const iterator = (hook, cb) => {
             hook(route, this.current, cb);
         };
-
         runQueue(queue, iterator, () => {
             console.log('queue', queue);
             this.current = route; // current变量引用地址变了

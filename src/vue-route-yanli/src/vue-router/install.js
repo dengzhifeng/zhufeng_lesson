@@ -3,7 +3,7 @@
  * @author: steve.deng
  * @Date: 2020-12-22 07:19:31
  * @LastEditors: steve.deng
- * @LastEditTime: 2020-12-23 15:19:15
+ * @LastEditTime: 2020-12-25 15:24:27
  */
 import RouterLink from './components/router-link';
 import RouterView from './components/router-view';
@@ -14,7 +14,8 @@ export function install(Vue, options) {
     _Vue = Vue;
 
     //我需要将当前的根实例的提供的router属性 共享给所有子组件 Vue.prototype不好 会影响了全局的Vue实例 改用mixin
-
+    debugger;
+    console.log('this', this);
     // 所有子组件初始化的时候 都会去调用Vue.extend Vue.options
     Vue.mixin({
         beforeCreate() {
@@ -43,8 +44,10 @@ export function install(Vue, options) {
     });
 
     // 代理
+    console.log('this', this);
     Object.defineProperty(Vue.prototype, '$route', {
         get() {
+            console.log('this Vue.prototype', this);
             return this._routerRoot._route; // current对象 里面放的属性 path matched   _route放属性
         }
     });
